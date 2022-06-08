@@ -1,10 +1,15 @@
 import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./containers/Home";
 
 function App() {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 
