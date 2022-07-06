@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 import "./index.scss";
-import Header from "../../components/Header";
 
 class About extends Component {
   render() {
@@ -9,50 +10,7 @@ class About extends Component {
       <>
         <Header />
         <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
-        <h1>Bonjour :)</h1>
+        <Footer />
       </>
     );
   }
