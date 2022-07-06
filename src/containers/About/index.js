@@ -9,7 +9,31 @@ class About extends Component {
     return (
       <>
         <Header />
-        <h1>Bonjour :)</h1>
+        <div className="about">
+          <div className="images">
+            <img
+              src="https://res.cloudinary.com/dyj1ddjba/image/upload/v1657116945/playbabe/calendar_il5z7e.png"
+              alt="calendar-preview"
+            />
+          </div>
+          <div className="text">
+            <div className="text-container">
+              <p>
+                This project questions the ways in which female bodies are
+                perceived in society. Articulated as political territories up to
+                this day, the PlayBabe Calendar unveils bodies through sensual
+                images, away from the male gaze.
+              </p>
+              <p>
+                Inspired by the aesthetic of erotic magazines, it aims to
+                empower women, to regain their identities.
+              </p>
+              <div className="button-container">
+                <button>ORDER ONE EXEMPLAR</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <Footer />
       </>
     );
