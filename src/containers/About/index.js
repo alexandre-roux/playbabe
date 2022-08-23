@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
@@ -29,7 +30,7 @@ class About extends Component {
                 empower women, to regain their identities.
               </p>
               <div className="button-container">
-                <button>ORDER ONE EXEMPLAR</button>
+                <Link to="/eshop">ORDER ONE EXEMPLAR</Link>
               </div>
             </div>
           </div>
