@@ -32,10 +32,20 @@ const Home = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setImageURL(images[Math.floor(Math.random() * images.length)]);
-    }, 500);
+    }, 1000);
 
     return () => clearInterval(intervalId);
   }, []);
+
+  const [isHovering, setIsHovering] = useState(false);
+
+  const handleMouseOver = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseOut = () => {
+    setIsHovering(false);
+  };
 
   return (
     <Link
@@ -45,13 +55,34 @@ const Home = () => {
         backgroundImage: "url(" + imageURL + ")",
       }}
     >
-      <h1>ENTER WEBSITE</h1>
+      <h1
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
+        style={{
+          color: isHovering ? "#FB293D" : "white",
+        }}
+      >
+        ENTER WEBSITE
+      </h1>
       <img
-        className="logo-white"
-        src="https://res.cloudinary.com/dyj1ddjba/image/upload/v1661266858/playbabe/logo-white_tjhebp.png"
-        alt="logo-white"
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
+        src={
+          isHovering
+            ? "https://res.cloudinary.com/dyj1ddjba/image/upload/v1661266858/playbabe/logo-red_z7ocjr.png"
+            : "https://res.cloudinary.com/dyj1ddjba/image/upload/v1661266858/playbabe/logo-white_tjhebp.png"
+        }
+        alt="logo"
       />
-      <h1>ENTER WEBSITE</h1>
+      <h1
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
+        style={{
+          color: isHovering ? "#FB293D" : "white",
+        }}
+      >
+        ENTER WEBSITE
+      </h1>
     </Link>
   );
 };
