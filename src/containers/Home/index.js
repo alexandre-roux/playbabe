@@ -4,28 +4,28 @@ import { Link } from "react-router-dom";
 import "./index.scss";
 
 const images = [
-  "/images/homepage/homepage.png",
-  "/images/homepage/homepage2.png",
-  "/images/homepage/homepage3.png",
-  "/images/homepage/homepage4.png",
-  "/images/homepage/homepage5.png",
-  "/images/homepage/homepage6.png",
-  "/images/homepage/homepage7.png",
-  "/images/homepage/homepage8.png",
-  "/images/homepage/homepage9.png",
-  "/images/homepage/homepage10.png",
-  "/images/homepage/homepage11.png",
-  "/images/homepage/homepage12.png",
-  "/images/homepage/homepage13.png",
-  "/images/homepage/homepage14.png",
-  "/images/homepage/homepage15.png",
-  "/images/homepage/homepage16.png",
-  "/images/homepage/homepage17.png",
-  "/images/homepage/homepage18.png",
+  "/images/homepage/homepage.jpg",
+  "/images/homepage/homepage2.jpg",
+  "/images/homepage/homepage3.jpg",
+  "/images/homepage/homepage4.jpg",
+  "/images/homepage/homepage5.jpg",
+  "/images/homepage/homepage6.jpg",
+  "/images/homepage/homepage7.jpg",
+  "/images/homepage/homepage8.jpg",
+  "/images/homepage/homepage9.jpg",
+  "/images/homepage/homepage10.jpg",
+  "/images/homepage/homepage11.jpg",
+  "/images/homepage/homepage12.jpg",
+  "/images/homepage/homepage13.jpg",
+  "/images/homepage/homepage14.jpg",
+  "/images/homepage/homepage15.jpg",
+  "/images/homepage/homepage16.jpg",
+  "/images/homepage/homepage17.jpg",
+  "/images/homepage/homepage18.jpg",
 ];
 
 const Home = () => {
-  const [imageURL, setImageURL] = useState("/images/homepage/homepage.png");
+  const [imageURL, setImageURL] = useState("/images/homepage/homepage.jpg");
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -65,11 +65,7 @@ const Home = () => {
       <images
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
-        src={
-          isHovering
-            ? "https://res.cloudinary.com/dyj1ddjba/image/upload/v1661266858/playbabe/logo-red_z7ocjr.png"
-            : "https://res.cloudinary.com/dyj1ddjba/image/upload/v1661266858/playbabe/logo-white_tjhebp.png"
-        }
+        src={isHovering ? "/images/logo-red.png" : "/images/logo-white.png"}
         alt="logo"
       />
       <h1
