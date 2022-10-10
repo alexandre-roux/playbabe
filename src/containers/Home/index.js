@@ -4,30 +4,28 @@ import { Link } from "react-router-dom";
 import "./index.scss";
 
 const images = [
-  "https://res.cloudinary.com/dyj1ddjba/image/upload/v1665397642/playbabe/homepage/homepage11_mppth8.jpg",
-  "https://res.cloudinary.com/dyj1ddjba/image/upload/v1665397642/playbabe/homepage/homepage12_sjynua.jpg",
-  "https://res.cloudinary.com/dyj1ddjba/image/upload/v1665397642/playbabe/homepage/homepage9_digoyp.jpg",
-  "https://res.cloudinary.com/dyj1ddjba/image/upload/v1665397641/playbabe/homepage/homepage10_gjascf.jpg",
-  "https://res.cloudinary.com/dyj1ddjba/image/upload/v1665397640/playbabe/homepage/homepage8_txhtom.jpg",
-  "https://res.cloudinary.com/dyj1ddjba/image/upload/v1665397640/playbabe/homepage/homepage5_l2ubke.jpg",
-  "https://res.cloudinary.com/dyj1ddjba/image/upload/v1665397640/playbabe/homepage/homepage7_bg8fha.jpg",
-  "https://res.cloudinary.com/dyj1ddjba/image/upload/v1665397639/playbabe/homepage/homepage6_bvb5me.jpg",
-  "https://res.cloudinary.com/dyj1ddjba/image/upload/v1665397639/playbabe/homepage/homepage4_wbenb6.jpg",
-  "https://res.cloudinary.com/dyj1ddjba/image/upload/v1665397639/playbabe/homepage/homepage17_cvlcxz.jpg",
-  "https://res.cloudinary.com/dyj1ddjba/image/upload/v1665397638/playbabe/homepage/homepage2_srmlj1.jpg",
-  "https://res.cloudinary.com/dyj1ddjba/image/upload/v1665397637/playbabe/homepage/homepage14_uji8jm.jpg",
-  "https://res.cloudinary.com/dyj1ddjba/image/upload/v1665397638/playbabe/homepage/homepage16_leabn4.jpg",
-  "https://res.cloudinary.com/dyj1ddjba/image/upload/v1665397638/playbabe/homepage/homepage3_crvhcu.jpg",
-  "https://res.cloudinary.com/dyj1ddjba/image/upload/v1665397637/playbabe/homepage/homepage15_uamoeq.jpg",
-  "https://res.cloudinary.com/dyj1ddjba/image/upload/v1665397637/playbabe/homepage/homepage13_ttulpe.jpg",
-  "https://res.cloudinary.com/dyj1ddjba/image/upload/v1665397637/playbabe/homepage/homepage18_nzksme.jpg",
-  "https://res.cloudinary.com/dyj1ddjba/image/upload/v1665397637/playbabe/homepage/homepage_n23v4x.jpg",
+  "/images/homepage/homepage.png",
+  "/images/homepage/homepage2.png",
+  "/images/homepage/homepage3.png",
+  "/images/homepage/homepage4.png",
+  "/images/homepage/homepage5.png",
+  "/images/homepage/homepage6.png",
+  "/images/homepage/homepage7.png",
+  "/images/homepage/homepage8.png",
+  "/images/homepage/homepage9.png",
+  "/images/homepage/homepage10.png",
+  "/images/homepage/homepage11.png",
+  "/images/homepage/homepage12.png",
+  "/images/homepage/homepage13.png",
+  "/images/homepage/homepage14.png",
+  "/images/homepage/homepage15.png",
+  "/images/homepage/homepage16.png",
+  "/images/homepage/homepage17.png",
+  "/images/homepage/homepage18.png",
 ];
 
 const Home = () => {
-  const [imageURL, setImageURL] = useState(
-    "ttps://res.cloudinary.com/dyj1ddjba/image/upload/v1661265597/playbabe/homepage/homepage4_rpbwoy.png"
-  );
+  const [imageURL, setImageURL] = useState("/images/homepage/homepage.png");
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -64,7 +62,7 @@ const Home = () => {
       >
         ENTER WEBSITE
       </h1>
-      <img
+      <images
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
         src={
