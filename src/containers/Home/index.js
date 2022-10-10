@@ -62,7 +62,7 @@ const Home = () => {
       >
         ENTER WEBSITE
       </h1>
-      <images
+      <img
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
         src={isHovering ? "/images/logo-red.png" : "/images/logo-white.png"}
