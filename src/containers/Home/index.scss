@@ -1,31 +1,42 @@
 .home-container {
-  /* Full height */
   height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-
-  text-decoration: none;
+  width: 100%;
+  position: fixed;
 
   img {
+    height: 100%;
     width: 100%;
+    object-fit: cover;
   }
 
-  h1 {
-    color: white;
-    text-decoration: underline;
-    font-size: 30px;
-    margin: 15px 0;
-  }
+  .text-container {
+    height: 100%;
 
-  &:hover {
-    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    text-decoration: none;
+
+    h1 {
+      color: white;
+      text-decoration: underline;
+      font-size: 30px;
+      margin: 15px 0;
+    }
+
+    .logo {
+      height: auto;
+      width: 100%;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

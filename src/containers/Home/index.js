@@ -1,34 +1,14 @@
-import React, {useEffect, useState} from "react";
-import {Link} from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import "./index.scss";
 
-//TODO preload images to avoid flickering when changing background image
-const images = [
-  "/images/homepage/homepage1.jpg",
-  "/images/homepage/homepage2.jpg",
-  "/images/homepage/homepage3.jpg",
-  "/images/homepage/homepage4.jpg",
-  "/images/homepage/homepage5.jpg",
-  "/images/homepage/homepage6.jpg",
-  "/images/homepage/homepage7.jpg",
-  "/images/homepage/homepage8.jpg",
-  "/images/homepage/homepage9.jpg",
-  "/images/homepage/homepage10.jpg",
-  "/images/homepage/homepage11.jpg",
-  "/images/homepage/homepage12.jpg",
-  "/images/homepage/homepage13.jpg",
-  "/images/homepage/homepage14.jpg",
-  "/images/homepage/homepage15.jpg",
-  "/images/homepage/homepage16.jpg",
-];
-
 const Home = () => {
-  const [imageURL, setImageURL] = useState("/images/homepage/homepage.jpg");
+  const [background, setBackground] = useState("start");
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setImageURL(images[Math.floor(Math.random() * images.length)]);
+      setBackground("homepage" + Math.floor(Math.random() * 16 + 1));
     }, 1000);
 
     return () => clearInterval(intervalId);
@@ -45,38 +25,163 @@ const Home = () => {
   };
 
   return (
-    <Link
-      to="/about"
-      className="home-container"
-      style={{
-        backgroundImage: "url(" + imageURL + ")",
-      }}
-    >
-      <h1
-        onMouseOver={handleMouseOver}
-        onMouseOut={handleMouseOut}
-        style={{
-          color: isHovering ? "#FB293D" : "white",
-        }}
-      >
-        ENTER WEBSITE
-      </h1>
+    <div className="home-container">
       <img
-        onMouseOver={handleMouseOver}
-        onMouseOut={handleMouseOut}
-        src={isHovering ? "/images/logo-red.png" : "/images/logo-white.png"}
-        alt="logo"
-      />
-      <h1
-        onMouseOver={handleMouseOver}
-        onMouseOut={handleMouseOut}
+        src="/images/homepage/homepage1.jpg"
+        alt="background"
         style={{
-          color: isHovering ? "#FB293D" : "white",
+          display:
+            background === "" || background === "homepage1" ? "block" : "none",
         }}
-      >
-        ENTER WEBSITE
-      </h1>
-    </Link>
+      />
+      <img
+        src="/images/homepage/homepage2.jpg"
+        alt="background"
+        style={{
+          display:
+            background === "" || background === "homepage2" ? "block" : "none",
+        }}
+      />
+      <img
+        src="/images/homepage/homepage3.jpg"
+        alt="background"
+        style={{
+          display:
+            background === "" || background === "homepage3" ? "block" : "none",
+        }}
+      />
+      <img
+        src="/images/homepage/homepage4.jpg"
+        alt="background"
+        style={{
+          display:
+            background === "" || background === "homepage4" ? "block" : "none",
+        }}
+      />
+      <img
+        src="/images/homepage/homepage5.jpg"
+        alt="background"
+        style={{
+          display:
+            background === "" || background === "homepage5" ? "block" : "none",
+        }}
+      />
+      <img
+        src="/images/homepage/homepage6.jpg"
+        alt="background"
+        style={{
+          display:
+            background === "" || background === "homepage6" ? "block" : "none",
+        }}
+      />
+      <img
+        src="/images/homepage/homepage7.jpg"
+        alt="background"
+        style={{
+          display:
+            background === "" || background === "homepage7" ? "block" : "none",
+        }}
+      />
+      <img
+        src="/images/homepage/homepage8.jpg"
+        alt="background"
+        style={{
+          display:
+            background === "" || background === "homepage8" ? "block" : "none",
+        }}
+      />
+      <img
+        src="/images/homepage/homepage9.jpg"
+        alt="background"
+        style={{
+          display:
+            background === "" || background === "homepage9" ? "block" : "none",
+        }}
+      />
+      <img
+        src="/images/homepage/homepage10.jpg"
+        alt="background"
+        style={{
+          display:
+            background === "" || background === "homepage10" ? "block" : "none",
+        }}
+      />
+      <img
+        src="/images/homepage/homepage11.jpg"
+        alt="background"
+        style={{
+          display:
+            background === "" || background === "homepage11" ? "block" : "none",
+        }}
+      />
+      <img
+        src="/images/homepage/homepage12.jpg"
+        alt="background"
+        style={{
+          display:
+            background === "" || background === "homepage12" ? "block" : "none",
+        }}
+      />
+      <img
+        src="/images/homepage/homepage13.jpg"
+        alt="background"
+        style={{
+          display:
+            background === "" || background === "homepage13" ? "block" : "none",
+        }}
+      />
+      <img
+        src="/images/homepage/homepage14.jpg"
+        alt="background"
+        style={{
+          display:
+            background === "" || background === "homepage14" ? "block" : "none",
+        }}
+      />
+      <img
+        src="/images/homepage/homepage15.jpg"
+        alt="background"
+        style={{
+          display:
+            background === "" || background === "homepage15" ? "block" : "none",
+        }}
+      />
+      <img
+        src="/images/homepage/homepage16.jpg"
+        alt="background"
+        style={{
+          display:
+            background === "" || background === "homepage16" ? "block" : "none",
+        }}
+      />
+      <Link to="/about" className="text-container">
+        <h1
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
+          style={{
+            color: isHovering ? "#FB293D" : "white",
+          }}
+        >
+          ENTER WEBSITE
+        </h1>
+        <img
+          className="logo"
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
+          src={isHovering ? "/images/logo-red.png" : "/images/logo-white.png"}
+          alt="logo"
+        />
+        <h1
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
+          style={{
+            color: isHovering ? "#FB293D" : "white",
+          }}
+        >
+          ENTER WEBSITE
+        </h1>
+      </Link>
+    </div>
   );
 };
 
