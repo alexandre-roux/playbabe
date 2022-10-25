@@ -45,38 +45,120 @@ const Home = () => {
   };
 
   return (
-    <Link
-      to="/about"
-      className="home-container"
-      style={{
-        backgroundImage: "url(" + imageURL + ")",
-      }}
-    >
-      <h1
-        onMouseOver={handleMouseOver}
-        onMouseOut={handleMouseOut}
-        style={{
-          color: isHovering ? "#FB293D" : "white",
-        }}
-      >
-        ENTER WEBSITE
-      </h1>
+    <>
       <img
-        onMouseOver={handleMouseOver}
-        onMouseOut={handleMouseOut}
-        src={isHovering ? "/images/logo-red.png" : "/images/logo-white.png"}
-        alt="logo"
+        src="/images/homepage/homepage1.jpg"
+        style={{ display: "none" }}
+        alt=""
       />
-      <h1
-        onMouseOver={handleMouseOver}
-        onMouseOut={handleMouseOut}
+      <img
+        src="/images/homepage/homepage2.jpg"
+        style={{ display: "none" }}
+        alt=""
+      />
+      <img
+        src="/images/homepage/homepage3.jpg"
+        style={{ display: "none" }}
+        alt=""
+      />
+      <img
+        src="/images/homepage/homepage4.jpg"
+        style={{ display: "none" }}
+        alt=""
+      />
+      <img
+        src="/images/homepage/homepage5.jpg"
+        style={{ display: "none" }}
+        alt=""
+      />
+      <img
+        src="/images/homepage/homepage6.jpg"
+        style={{ display: "none" }}
+        alt=""
+      />
+      <img
+        src="/images/homepage/homepage7.jpg"
+        style={{ display: "none" }}
+        alt=""
+      />
+      <img
+        src="/images/homepage/homepage8.jpg"
+        style={{ display: "none" }}
+        alt=""
+      />
+      <img
+        src="/images/homepage/homepage9.jpg"
+        style={{ display: "none" }}
+        alt=""
+      />
+      <img
+        src="/images/homepage/homepage10.jpg"
+        style={{ display: "none" }}
+        alt=""
+      />
+      <img
+        src="/images/homepage/homepage11.jpg"
+        style={{ display: "none" }}
+        alt=""
+      />
+      <img
+        src="/images/homepage/homepage12.jpg"
+        style={{ display: "none" }}
+        alt=""
+      />
+      <img
+        src="/images/homepage/homepage13.jpg"
+        style={{ display: "none" }}
+        alt=""
+      />
+      <img
+        src="/images/homepage/homepage14.jpg"
+        style={{ display: "none" }}
+        alt=""
+      />
+      <img
+        src="/images/homepage/homepage15.jpg"
+        style={{ display: "none" }}
+        alt=""
+      />
+      <img
+        src="/images/homepage/homepage16.jpg"
+        style={{ display: "none" }}
+        alt=""
+      />
+      <Link
+        to="/about"
+        className="home-container"
         style={{
-          color: isHovering ? "#FB293D" : "white",
+          backgroundImage: "url(" + imageURL + ")",
         }}
       >
-        ENTER WEBSITE
-      </h1>
-    </Link>
+        <h1
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
+          style={{
+            color: isHovering ? "#FB293D" : "white",
+          }}
+        >
+          ENTER WEBSITE
+        </h1>
+        <img
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
+          src={isHovering ? "/images/logo-red.png" : "/images/logo-white.png"}
+          alt="logo"
+        />
+        <h1
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
+          style={{
+            color: isHovering ? "#FB293D" : "white",
+          }}
+        >
+          ENTER WEBSITE
+        </h1>
+      </Link>
+    </>
   );
 };
 
