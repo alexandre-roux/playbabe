@@ -1,15 +1,20 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 import "./index.scss";
+import { useMediaQuery } from "react-responsive";
 
-class About extends Component {
-  render() {
-    return (
-      <>
-        <Header />
+const About = () => {
+  const isMobile = useMediaQuery({ query: "(max-width: 1000px)" });
+
+  return (
+    <>
+      <Header />
+      {isMobile ? (
+        <div className="about-mobile"></div>
+      ) : (
         <div className="about">
           <div className="images">
             <img
@@ -35,10 +40,10 @@ class About extends Component {
             </div>
           </div>
         </div>
-        <Footer />
-      </>
-    );
-  }
-}
+      )}
+      <Footer />
+    </>
+  );
+};
 
 export default About;
