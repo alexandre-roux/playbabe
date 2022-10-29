@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 import "./index.scss";
 import { useMediaQuery } from "react-responsive";
+import Button from "../../components/Button";
 
 const About = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 1000px)" });
@@ -15,47 +15,22 @@ const About = () => {
       <div className="about">
         {isMobile ? (
           <div className="about-mobile">
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
-            <h1>Bonjour :)</h1>
+            <div className="background-image" />
+            <div className="text">
+              <div className="text-container">
+                <p>
+                  This project questions the ways in which female bodies are
+                  perceived in society. Articulated as political territories up
+                  to this day, the PlayBabe Calendar unveils bodies through
+                  sensual images, away from the male gaze.
+                </p>
+                <p>
+                  Inspired by the aesthetic of erotic magazines, it aims to
+                  empower women, to regain their identities.
+                </p>
+                <Button text="ORDER ONE EXEMPLAR" to="/eshop" />
+              </div>
+            </div>
           </div>
         ) : (
           <div className="about-desktop">
@@ -77,9 +52,7 @@ const About = () => {
                   Inspired by the aesthetic of erotic magazines, it aims to
                   empower women, to regain their identities.
                 </p>
-                <div className="button-container">
-                  <Link to="/eshop">ORDER ONE EXEMPLAR</Link>
-                </div>
+                <Button text="ORDER ONE EXEMPLAR" to="/eshop" />
               </div>
             </div>
           </div>
