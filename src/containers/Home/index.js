@@ -153,20 +153,13 @@ const Home = () => {
             background === "" || background === "homepage16" ? "block" : "none",
         }}
       />
-      <div className="text-container">
+      <div className="logo-container">
         <img
           className="logo"
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
           src={isHovering ? "/images/logo-red.png" : "/images/logo-white.png"}
           alt="logo"
-        />
-      </div>
-      <div className="text-container">
-        <img
-          className="coming-soon"
-          src="/images/homepage/coming-soon.png"
-          alt="coming-soon"
         />
       </div>
     </div>
