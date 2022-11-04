@@ -18,25 +18,11 @@
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-
-    text-decoration: none;
-
-    h1 {
-      color: white;
-      text-decoration: underline;
-      font-size: 23px;
-      margin: 15px 0;
-    }
+    justify-content: center;
 
     .logo {
       height: auto;
       width: 100%;
-    }
-
-    &:hover {
-      cursor: pointer;
     }
   }
 }
