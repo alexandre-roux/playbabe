@@ -5,12 +5,16 @@
   left: 0;
   right: 0;
   overflow: auto;
+  padding: 0 100px;
 
   .about-desktop {
     display: flex;
+    height: 85%;
+    margin: 30px;
+    gap: 50px;
 
     .images {
-      flex: 1;
+      flex: 2;
       display: flex;
       justify-content: center;
 
@@ -21,19 +25,27 @@
     }
 
     .text {
-      flex: 1;
+      flex: 3;
       display: flex;
       justify-content: center;
 
       .text-container {
-        margin-top: 100px;
-        width: 500px;
         display: flex;
-        gap: 50px;
+        gap: 40px;
         flex-direction: column;
 
         p {
-          font-size: 30px;
+          font-size: 1.8em;
+        }
+
+        .details {
+          display: flex;
+          gap: 20px;
+
+          p {
+            flex: 1;
+            font-size: 1.3em;
+          }
         }
       }
     }
