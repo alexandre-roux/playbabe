@@ -162,6 +162,13 @@ const Home = () => {
           alt="logo"
         />
       </div>
+      <div className="text-container">
+        <img
+          className="coming-soon"
+          src="/images/homepage/coming-soon.png"
+          alt="coming-soon"
+        />
+      </div>
     </div>
   );
 };
