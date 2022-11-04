@@ -5,13 +5,13 @@
   left: 0;
   right: 0;
   overflow: auto;
-  padding: 0 100px;
 
   .about-desktop {
     display: flex;
     height: 85%;
     margin: 30px;
     gap: 50px;
+    padding: 0 100px;
 
     .images {
       flex: 2;
@@ -54,31 +54,21 @@
   .about-mobile {
     height: 100%;
 
-    .background-image {
-      height: 100%;
-      width: 100%;
-      background-image: url("../../../public/images/calendar.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      position: fixed;
-    }
-
     .text {
-      position: absolute;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
+      flex-direction: column;
+      gap: 10px;
 
-      .text-container {
-        background-color: white;
-        margin: 25px;
-        padding: 15px;
+      p {
+        font-size: 1.5em;
+      }
+
+      .details {
+        display: flex;
 
         p {
-          font-size: 20px;
-          margin-bottom: 20px;
+          flex: 1;
+          font-size: 0.6em;
         }
       }
     }
