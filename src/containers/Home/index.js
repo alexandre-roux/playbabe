@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import "./index.scss";
 
@@ -153,7 +154,16 @@ const Home = () => {
             background === "" || background === "homepage16" ? "block" : "none",
         }}
       />
-      <div className="logo-container">
+      <Link to="/about" className="text-container">
+        <h1
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
+          style={{
+            color: isHovering ? "#FB293D" : "white",
+          }}
+        >
+          ENTER WEBSITE
+        </h1>
         <img
           className="logo"
           onMouseOver={handleMouseOver}
@@ -161,7 +171,16 @@ const Home = () => {
           src={isHovering ? "/images/logo-red.png" : "/images/logo-white.png"}
           alt="logo"
         />
-      </div>
+        <h1
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
+          style={{
+            color: isHovering ? "#FB293D" : "white",
+          }}
+        >
+          ENTER WEBSITE
+        </h1>
+      </Link>
     </div>
   );
 };
