@@ -11,8 +11,8 @@ const About = () => {
 
   return (
     <>
-      <Header />
       <div className="about">
+        <Header />
         {isMobile ? (
           <div className="about-mobile">
             <div className="text">
@@ -118,8 +118,8 @@ const About = () => {
             </div>
           </div>
         )}
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 };
