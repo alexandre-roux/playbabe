@@ -83,15 +83,17 @@ const Eshop = () => {
 
   return (
     <>
-      <Header />
-      <div className="products-container">
-        <div className="products">
-          {data.map((product, index) => {
-            return <Product key={index} product={product} />;
-          })}
+      <div className="eshop-desktop">
+        <Header />
+        <div className="products-container">
+          <div className="products">
+            {data.map((product, index) => {
+              return <Product key={index} product={product} />;
+            })}
+          </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 };

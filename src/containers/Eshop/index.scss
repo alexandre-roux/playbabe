@@ -1,11 +1,22 @@
-.products-container {
+.eshop-desktop {
+  height: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  .products-container {
+    width: 100%;
+    max-height: 80%;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+  }
+
+  .products {
+    width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-.products {
-  width: 1280px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 30px auto auto;
-}
