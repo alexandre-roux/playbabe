@@ -11,10 +11,10 @@ const About = () => {
 
   return (
     <>
-      <div className="about">
-        <Header />
-        {isMobile ? (
-          <div className="about-mobile">
+      {isMobile ? (
+        <div className="about-mobile">
+          <Header />
+          <div className="about-content">
             <div className="text">
               <p>
                 The PLAYBABE calendar is a non-profit project aiming at raising
@@ -63,8 +63,12 @@ const About = () => {
               <img src="/images/calendar.png" alt="calendar-preview" />
             </div>
           </div>
-        ) : (
-          <div className="about-desktop">
+          <Footer />
+        </div>
+      ) : (
+        <div className="about-desktop">
+          <Header />
+          <div className="about-content">
             <div className="images">
               <img src="/images/calendar.png" alt="calendar-preview" />
             </div>
@@ -117,9 +121,9 @@ const About = () => {
               </div>
             </div>
           </div>
-        )}
-        <Footer />
-      </div>
+          <Footer />
+        </div>
+      )}
     </>
   );
 };

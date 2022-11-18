@@ -1,11 +1,11 @@
-.about {
+.about-desktop {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 
-  .about-desktop {
+  .about-content {
     max-width: 1280px;
     height: 70%;
     display: flex;
@@ -49,9 +49,16 @@
       }
     }
   }
+}
 
-  .about-mobile {
-    height: 100%;
+.about-mobile {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .about-content {
+    overflow: scroll;
 
     .text {
       display: flex;
