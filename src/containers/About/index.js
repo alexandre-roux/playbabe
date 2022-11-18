@@ -13,7 +13,7 @@ const About = () => {
     <>
       {isMobile ? (
         <div className="about-mobile">
-          <Header />
+          <Header className="header" />
           <div className="about-content">
             <div className="text">
               <p>
@@ -63,7 +63,7 @@ const About = () => {
               <img src="/images/calendar.png" alt="calendar-preview" />
             </div>
           </div>
-          <Footer />
+          <Footer className="footer" />
         </div>
       ) : (
         <div className="about-desktop">
