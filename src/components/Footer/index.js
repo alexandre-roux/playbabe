@@ -8,18 +8,20 @@ const Footer = () => {
 
   return (
     <div className="footer">
-      <Link
-        className={location.pathname === "/eshop" ? "selected" : ""}
-        to="/eshop"
-      >
-        ESHOP
-      </Link>
-      <Link
-        className={location.pathname === "/about" ? "selected" : ""}
-        to="/about"
-      >
-        ABOUT
-      </Link>
+      <div className="footer-content">
+        <Link
+          className={location.pathname === "/eshop" ? "selected" : ""}
+          to="/eshop"
+        >
+          ESHOP
+        </Link>
+        <Link
+          className={location.pathname === "/about" ? "selected" : ""}
+          to="/about"
+        >
+          ABOUT
+        </Link>
+      </div>
     </div>
   );
 };
