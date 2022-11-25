@@ -9,7 +9,7 @@ const Home = () => {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setBackground("homepage" + Math.floor(Math.random() * 16 + 1));
+      setBackground("homepage" + Math.floor(Math.random() * 19 + 1));
     }, 1000);
 
     return () => clearInterval(intervalId);
@@ -156,6 +156,30 @@ const Home = () => {
         style={{
           display:
             background === "" || background === "homepage16" ? "block" : "none",
+        }}
+      />
+      <img
+        src="/images/homepage/homepage17.jpg"
+        alt="background"
+        style={{
+          display:
+            background === "" || background === "homepage17" ? "block" : "none",
+        }}
+      />
+      <img
+        src="/images/homepage/homepage18.jpg"
+        alt="background"
+        style={{
+          display:
+            background === "" || background === "homepage18" ? "block" : "none",
+        }}
+      />
+      <img
+        src="/images/homepage/homepage19.jpg"
+        alt="background"
+        style={{
+          display:
+            background === "" || background === "homepage19" ? "block" : "none",
         }}
       />
       <Link to="/about" className="text-container">

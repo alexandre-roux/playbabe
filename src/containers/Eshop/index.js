@@ -55,30 +55,6 @@ const Eshop = () => {
       name: "Rougequeue",
       price: 100,
     },
-    {
-      imageURL:
-        "https://i0.wp.com/www.quelestcetanimal.com/wp-content/uploads/2019/03/DSC09493.jpg",
-      name: "Pic épeiche",
-      price: 156,
-    },
-    {
-      imageURL:
-        "https://i0.wp.com/www.quelestcetanimal.com/wp-content/uploads/2021/11/ASN1-1.jpeg",
-      name: "Tarier pâtre",
-      price: 157,
-    },
-    {
-      imageURL:
-        "https://i0.wp.com/www.quelestcetanimal.com/wp-content/uploads/2021/03/BA1-1.jpg",
-      name: "Choucas",
-      price: 946,
-    },
-    {
-      imageURL:
-        "https://ainvo.fr/wp-content/uploads/2016/01/qz_passereau_qu01.jpg",
-      name: "Rougegorge",
-      price: 125,
-    },
   ];
 
   return (
