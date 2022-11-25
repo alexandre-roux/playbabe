@@ -31,27 +31,9 @@ html, body, #root {
 }
 
 @font-face {
-    font-family: 'GT America';
-    src: url('./assets/fonts/GTAmerica-Regular.woff2') format('woff2'),
-    url('./assets/fonts/GTAmerica-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'GT America';
-    src: url('./assets/fonts/GTAmerica-Bold.woff2') format('woff2'),
-    url('./assets/fonts/GTAmerica-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'GT America';
-    src: url('./assets/fonts/GTAmerica-BoldItalic.woff2') format('woff2'),
-    url('./assets/fonts/GTAmerica-BoldItalic.woff') format('woff');
+    font-family: 'GT America Extended Black';
+    src: url('./assets/fonts/GT-America-Extended-Black.woff2') format('woff2'),
+    url('./assets/fonts/GT-America-Extended-Black.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
