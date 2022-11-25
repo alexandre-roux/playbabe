@@ -11,6 +11,7 @@
 
   .text-container {
     height: 100%;
+    width: 100%;
 
     position: absolute;
     top: 0;
@@ -21,18 +22,18 @@
     justify-content: space-between;
     flex-direction: column;
 
+    color: white;
     text-decoration: none;
 
-    h1 {
-      color: white;
+    h2 {
       text-decoration: underline;
       font-size: 23px;
       margin: 15px 0;
     }
 
     .logo {
-      height: auto;
       width: 97.5%;
+      font-family: "GT America Extended Black", sans-serif;
     }
 
     &:hover {

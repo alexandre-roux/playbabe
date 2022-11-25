@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Textfit } from "react-textfit";
 
 import "./index.scss";
 
@@ -15,9 +16,12 @@ const Home = () => {
   }, []);
 
   const [isHovering, setIsHovering] = useState(false);
+  const colors = ["#FF1739", "#DEFF42"];
+  const [textColor, setTextColor] = useState(colors[0]);
 
   const handleMouseOver = () => {
     setIsHovering(true);
+    setTextColor(colors[Math.floor(Math.random() * colors.length)]);
   };
 
   const handleMouseOut = () => {
@@ -155,31 +159,36 @@ const Home = () => {
         }}
       />
       <Link to="/about" className="text-container">
-        <h1
+        <h2
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
           style={{
-            color: isHovering ? "#FB293D" : "white",
+            color: isHovering ? textColor : "white",
           }}
         >
           ENTER WEBSITE
-        </h1>
-        <img
+        </h2>
+        <Textfit
           className="logo"
-          onMouseOver={handleMouseOver}
-          onMouseOut={handleMouseOut}
-          src={isHovering ? "/images/logo-red.png" : "/images/logo-white.png"}
-          alt="logo"
-        />
-        <h1
+          mode="single"
+          max={1000}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
           style={{
-            color: isHovering ? "#FB293D" : "white",
+            color: isHovering ? textColor : "white",
+          }}
+        >
+          PLAYBABE
+        </Textfit>
+        <h2
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
+          style={{
+            color: isHovering ? textColor : "white",
           }}
         >
           ENTER WEBSITE
-        </h1>
+        </h2>
       </Link>
     </div>
   );
