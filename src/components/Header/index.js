@@ -8,7 +8,7 @@ const Header = () => {
       <img
         className="logo-black"
         src="/images/logo-black.png"
-        alt="logo-white"
+        alt="logo-black"
       />
     </div>
   );
