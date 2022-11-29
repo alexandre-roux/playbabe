@@ -3,22 +3,43 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+
+  .header {
+    flex-shrink: 0;
+  }
 
   .about-content {
-    max-width: 1280px;
-    height: 70%;
+    flex-grow: 1;
+    min-height: 2em;
+    padding: 0 5%;
     display: flex;
     gap: 50px;
 
-    .images {
-      flex: 2;
-      display: flex;
-      justify-content: center;
+    .images::-webkit-scrollbar {
+      display: none; /* Safari and Chrome */
+    }
 
-      img {
-        max-width: 500px;
-        object-fit: cover;
+    .images {
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+      scrollbar-width: none; /* Firefox */
+      flex: 5;
+      overflow-y: auto;
+      position: relative;
+
+      .about1 {
+        width: 75%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .about3 {
+        width: 50%;
+        position: absolute;
+        top: 170px;
+        right: 0;
       }
     }
 
@@ -39,15 +60,23 @@
 
         .details {
           display: flex;
+          justify-content: space-between;
           gap: 20px;
 
           p {
-            flex: 1;
-            font-size: 1.3em;
+            font-size: 20px;
+          }
+
+          img {
+            height: 120px;
           }
         }
       }
     }
+  }
+
+  .footer {
+    flex-shrink: 0;
   }
 }
 
