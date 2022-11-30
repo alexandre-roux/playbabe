@@ -77,10 +77,9 @@ const About = () => {
                   </span>
                 </p>
                 <div className="details">
-                  <Link className="button" to={"/eshop"}>
+                  <Link to={"/eshop"}>
                     <img src="/images/about/button.PNG" alt="button" />
                   </Link>
-                  <div></div>
                   <p>
                     Aurélia Majean
                     <br />
