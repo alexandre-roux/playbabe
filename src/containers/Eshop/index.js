@@ -4,8 +4,11 @@ import Footer from "../../components/Footer";
 
 import "./index.scss";
 import Product from "../../components/Product";
+import { useMediaQuery } from "react-responsive";
 
 const Eshop = () => {
+  const isMobile = useMediaQuery({ query: "(max-width: 1000px)" });
+
   const data = [
     {
       imageURL: "/images/eshop/calendar.jpg",
@@ -31,19 +34,33 @@ const Eshop = () => {
 
   return (
     <>
-      <div className="eshop-desktop">
-        <Header />
-        <div className="eshop-content">
-          <div className="row">
+      {isMobile ? (
+        <div className="eshop-mobile">
+          <Header className="header" />
+          <div className="eshop-content">
             {data.map((product, index) => {
               return (
                 <Product classname="product" key={index} product={product} />
               );
             })}
           </div>
+          <Footer className="footer" />
         </div>
-        <Footer />
-      </div>
+      ) : (
+        <div className="eshop-desktop">
+          <Header />
+          <div className="eshop-content">
+            <div className="row">
+              {data.map((product, index) => {
+                return (
+                  <Product classname="product" key={index} product={product} />
+                );
+              })}
+            </div>
+          </div>
+          <Footer />
+        </div>
+      )}
     </>
   );
 };
