@@ -8,7 +8,7 @@ import Product from "../../components/Product";
 const Eshop = () => {
   const data = [
     {
-      imageURL: "/images/eshop/calendar.png",
+      imageURL: "/images/eshop/calendar.jpg",
       name: "Calendar Edition 2023",
       price: 35,
     },
