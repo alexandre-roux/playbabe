@@ -85,6 +85,10 @@
 
           img {
             height: 120px;
+
+            &:hover {
+              -webkit-filter: invert(100%) !important;
+            }
           }
         }
       }
