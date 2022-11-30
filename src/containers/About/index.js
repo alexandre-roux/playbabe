@@ -81,6 +81,16 @@ const About = () => {
                 src="/images/about/about3.jpg"
                 alt="about3"
               />
+              <img
+                className="about4"
+                src="/images/about/about4.jpg"
+                alt="about4"
+              />
+              <img
+                className="about2"
+                src="/images/about/about2.png"
+                alt="about2"
+              />
             </div>
             <div className="text">
               <div className="text-container">
