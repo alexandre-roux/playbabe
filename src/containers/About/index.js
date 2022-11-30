@@ -54,7 +54,7 @@ const About = () => {
               />
               <img
                 className="about2"
-                src="/images/about/about2.png"
+                src="/images/about/about2.jpg"
                 alt="about2"
               />
             </div>
