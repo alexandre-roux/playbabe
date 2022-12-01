@@ -5,7 +5,7 @@ import { Textfit } from "react-textfit";
 import "./index.scss";
 
 const Home = () => {
-  const [background, setBackground] = useState("start");
+  const [background, setBackground] = useState("homepage1");
 
   useEffect(() => {
     const intervalId = setInterval(() => {
