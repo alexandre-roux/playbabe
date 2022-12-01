@@ -98,13 +98,19 @@ const ProductModal = ({ name, price, setDisplayModal }) => {
                   )}
                 </div>
                 <div className="button">
-                  <img
-                    src={
-                      name.includes("Calendar")
-                        ? "/images/eshop/order-yours-white.png"
-                        : "/images/eshop/contact-us-white.png"
-                    }
-                  />
+                  {name.includes("Calendar") ? (
+                    <img
+                      src="/images/eshop/order-yours-white.png"
+                      alt="calendar"
+                    />
+                  ) : (
+                    <a href="mailto:info@playbabe.org">
+                      <img
+                        src="/images/eshop/contact-us-white.png"
+                        alt="calendar"
+                      />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
