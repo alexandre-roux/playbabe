@@ -25,7 +25,9 @@ const About = () => {
               the traditional use of women's bodies in our culture and place it
               a the center of our political project.
             </p>
-            <img className="text" src="/images/about/text.PNG" alt="text" />
+            <a href="https://www.hydra-berlin.de/">
+              <img className="text" src="/images/about/text.PNG" alt="text" />
+            </a>
             <Link to="/eshop" className="button">
               <img src="/images/about/button.PNG" alt="button" />
             </Link>
@@ -72,9 +74,7 @@ const About = () => {
                 <p style={{ fontWeight: "bold" }}>
                   This year PLAYBABE supports Sex Workers' Rights and give 100%
                   of Calendar sale benefits to{" "}
-                  <span style={{ textDecorationLine: "underline" }}>
-                    HYDRA BERLIN.
-                  </span>
+                  <a href="https://www.hydra-berlin.de/">HYDRA BERLIN.</a>
                 </p>
                 <div className="details">
                   <Link to={"/eshop"}>
