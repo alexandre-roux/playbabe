@@ -16,7 +16,7 @@ const Eshop = () => {
       price: 35,
     },
     {
-      imageURL: "/images/eshop/thong.png",
+      imageURL: "/images/eshop/string.png",
       name: "« PLAYBABE » Upcycled Thong",
       price: 75,
     },
