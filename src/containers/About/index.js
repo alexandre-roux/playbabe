@@ -88,9 +88,7 @@ const About = () => {
                     Founders of PLAYBABE
                     <br />
                     <br />
-                    <span style={{ fontWeight: "bold" }}>
-                      info@playbabe.org
-                    </span>
+                    <a href="mailto:info@playbabe.org">info@playbabe.org</a>
                   </p>
                 </div>
               </div>
