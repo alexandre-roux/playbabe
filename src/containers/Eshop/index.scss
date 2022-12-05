@@ -24,7 +24,6 @@
 }
 
 .eshop-mobile {
-
   .header {
     height: 50px;
     position: absolute;
@@ -50,7 +49,7 @@
       flex: 1;
 
       img {
-        height: 500px;
+        height: 60vh;
       }
     }
   }
@@ -62,6 +61,7 @@
     left: 0;
     right: 0;
     overflow: hidden;
+    z-index: 2;
   }
 }
 
