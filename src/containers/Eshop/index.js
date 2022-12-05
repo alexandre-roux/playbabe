@@ -37,12 +37,14 @@ const Eshop = () => {
       {isMobile ? (
         <div className="eshop-mobile">
           <Header className="header" />
-          <div className="eshop-content">
-            {data.map((product, index) => {
-              return (
-                <Product classname="product" key={index} product={product} />
-              );
-            })}
+          <div className="eshop-container">
+            <div className="eshop-content">
+              {data.map((product, index) => {
+                return (
+                  <Product classname="product" key={index} product={product} />
+                );
+              })}
+            </div>
           </div>
           <Footer className="footer" />
         </div>

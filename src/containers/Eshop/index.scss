@@ -33,14 +33,17 @@
     overflow: hidden;
   }
 
-  .eshop-content {
+  .eshop-container {
     position: absolute;
     top: 50px;
     bottom: 50px;
     left: 0;
     right: 0;
     overflow: auto;
-    padding: 15px;
+  }
+
+  .eshop-content {
+    margin: 15px;
     display: flex;
     flex-direction: column;
     gap: 20px;

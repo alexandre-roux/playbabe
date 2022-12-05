@@ -121,38 +121,41 @@
     overflow: hidden;
   }
 
-  .about-content {
+  .about-container {
     position: absolute;
     top: 50px;
     bottom: 50px;
     left: 0;
     right: 0;
     overflow: auto;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 
-    p {
-      font-size: 2.1em;
-    }
+    .about-content {
+      margin: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
 
-    .calendar-img {
-      height: 500px;
-      object-fit: cover;
-    }
+      p {
+        font-size: 2.1em;
+      }
 
-    .text {
-      width: 75%;
-    }
+      .calendar-img {
+        height: 500px;
+        object-fit: cover;
+      }
 
-    .button {
-      position: relative;
+      .text {
+        width: 75%;
+      }
 
-      img {
-        width: 50%;
-        position: absolute;
-        right: 0;
+      .button {
+        position: relative;
+
+        img {
+          width: 50%;
+          position: absolute;
+          right: 0;
+        }
       }
     }
   }
