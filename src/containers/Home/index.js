@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Textfit } from "react-textfit";
 
 import "./index.scss";
 
@@ -192,10 +191,8 @@ const Home = () => {
         >
           ENTER WEBSITE
         </h2>
-        <Textfit
+        <h1
           className="logo"
-          mode="single"
-          max={1000}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
           style={{
@@ -203,7 +200,7 @@ const Home = () => {
           }}
         >
           PLAYBABE
-        </Textfit>
+        </h1>
         <h2
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}

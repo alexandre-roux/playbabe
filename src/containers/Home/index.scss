@@ -25,16 +25,17 @@
     color: white;
     text-decoration: none;
 
+    h1 {
+      font-family: "GT America Extended Black", sans-serif;
+      font-size: 15.5vw;
+    }
+
     h2 {
       text-decoration: underline;
       font-size: 23px;
       margin: 15px 0;
     }
 
-    .logo {
-      width: 97.5%;
-      font-family: "GT America Extended Black", sans-serif;
-    }
 
     &:hover {
       cursor: pointer;
