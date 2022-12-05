@@ -117,9 +117,10 @@
   .modal-content {
     margin: 60px 20px;
     position: relative;
+    overflow: scroll;
 
     img {
-      height: 55vh;
+      height: 500px;
       width: 100%;
       object-fit: cover;
     }
