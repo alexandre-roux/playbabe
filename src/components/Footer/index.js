@@ -10,7 +10,11 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-content">
         <Link
-          className={location.pathname === "/eshop" ? "selected" : ""}
+          className={
+            location.pathname === "/eshop" || location.pathname === "/product"
+              ? "selected"
+              : ""
+          }
           to="/eshop"
         >
           ESHOP

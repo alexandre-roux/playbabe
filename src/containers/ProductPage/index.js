@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "../../components/Footer";
 import "./index.scss";
@@ -8,6 +8,7 @@ const ProductPage = () => {
   const location = useLocation();
   const { name, price } = location.state;
   const [image, setImage] = useState("calendar1");
+  const navigate = useNavigate();
 
   useEffect(() => {
     let i = 1;
@@ -26,7 +27,7 @@ const ProductPage = () => {
       <FontAwesomeIcon
         icon="xmark"
         className="xmark"
-        // onClick={() => setDisplayModal(false)}
+        onClick={() => navigate("/eshop")}
       />
       <div className="product-container">
         <div className="product-content">
