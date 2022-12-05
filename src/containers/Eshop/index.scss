@@ -46,7 +46,13 @@
     flex-direction: column;
     gap: 20px;
 
+    .product {
+      flex: 1;
 
+      img {
+        height: 500px;
+      }
+    }
   }
 
   .footer {
