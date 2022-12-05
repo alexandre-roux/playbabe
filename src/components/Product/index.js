@@ -19,6 +19,7 @@ const Product = ({ product }) => {
         </div>
       </div>
       {displayModal &&
+        !product.name.includes("XXL") &&
         (isMobile ? (
           <Navigate
             to="/product"
