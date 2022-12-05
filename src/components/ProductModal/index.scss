@@ -97,11 +97,12 @@
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 50px;
   background-color: black;
   color: white;
 
   .xmark {
+    z-index: 1;
     position: absolute;
     top: 5px;
     right: 5px;
@@ -114,6 +115,7 @@
   }
 
   .modal-content {
+    z-index: 1;
     margin: 60px 20px;
     position: relative;
     overflow: scroll;
