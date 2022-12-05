@@ -99,10 +99,12 @@ const ProductModal = ({ name, price, setDisplayModal }) => {
                 </div>
                 <div className="button">
                   {name.includes("Calendar") ? (
-                    <img
-                      src="/images/eshop/order-yours-white.png"
-                      alt="calendar"
-                    />
+                    <a href="https://buy.stripe.com/00g00aea7cbO78kcMO">
+                      <img
+                        src="/images/eshop/order-yours-white.png"
+                        alt="calendar"
+                      />
+                    </a>
                   ) : (
                     <a href="mailto:info@playbabe.org">
                       <img
