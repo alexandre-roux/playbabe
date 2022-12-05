@@ -102,7 +102,6 @@
   color: white;
 
   .xmark {
-    z-index: 1;
     position: absolute;
     top: 5px;
     right: 5px;
@@ -115,13 +114,11 @@
   }
 
   .modal-content {
-    z-index: 1;
     margin: 60px 20px;
     position: relative;
-    overflow: scroll;
 
     img {
-      height: 500px;
+      height: 60vh;
       width: 100%;
       object-fit: cover;
     }
