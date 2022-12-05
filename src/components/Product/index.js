@@ -2,9 +2,12 @@ import React, { useState } from "react";
 
 import "./index.scss";
 import ProductModal from "../ProductModal";
+import { useMediaQuery } from "react-responsive";
+import { Navigate } from "react-router-dom";
 
 const Product = ({ product }) => {
   const [displayModal, setDisplayModal] = useState(false);
+  const isMobile = useMediaQuery({ query: "(max-width: 1000px)" });
 
   return (
     <>
@@ -15,13 +18,19 @@ const Product = ({ product }) => {
           <span className="price">{product.price} €</span>
         </div>
       </div>
-      {displayModal && (
-        <ProductModal
-          name={product.name}
-          price={product.price}
-          setDisplayModal={setDisplayModal}
-        />
-      )}
+      {displayModal &&
+        (isMobile ? (
+          <Navigate
+            to="/product"
+            state={{ name: product.name, price: product.price }}
+          />
+        ) : (
+          <ProductModal
+            name={product.name}
+            price={product.price}
+            setDisplayModal={setDisplayModal}
+          />
+        ))}
     </>
   );
 };
