@@ -1,17 +1,12 @@
 .header {
   height: 75px;
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
 
   img {
-    height: 50%;
+    max-width: 300px;
   }
 }

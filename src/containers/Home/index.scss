@@ -9,7 +9,7 @@
     object-fit: cover;
   }
 
-  .logo-container {
+  .text-container {
     height: 100%;
     width: 100%;
 
@@ -19,11 +19,26 @@
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
 
-    .logo {
-      height: auto;
-      width: 100%;
+    color: white;
+    text-decoration: none;
+
+    h1 {
+      font-family: "GT America Extended Black", sans-serif;
+      font-size: 15.5vw;
+    }
+
+    h2 {
+      text-decoration: underline;
+      font-size: 23px;
+      margin: 15px 0;
+    }
+
+
+    &:hover {
+      cursor: pointer;
     }
   }
 }

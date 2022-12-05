@@ -1,24 +1,24 @@
 .footer {
   height: 75px;
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 25px;
   background-color: white;
 
-  a {
-    text-decoration: none;
-    color: black;
-    font-size: 30px;
-  }
+  .footer-content {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
 
-  .selected {
-    font-weight: bold;
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 30px;
+    }
+
+    .selected {
+      font-family: "GT America Extended Black", sans-serif;
+    }
   }
 }

@@ -1,76 +1,171 @@
-.about {
-  position: absolute;
-  top: 75px;
-  bottom: 75px;
-  left: 0;
-  right: 0;
-  overflow: auto;
+.about-desktop {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
 
-  .about-desktop {
+  .header {
+    flex-shrink: 0;
+  }
+
+  .about-content {
+    flex-grow: 1;
+    min-height: 2em;
+    padding: 0 5%;
     display: flex;
-    height: 85%;
-    margin: 30px;
     gap: 50px;
-    padding: 0 100px;
+
+    .images::-webkit-scrollbar {
+      display: none; /* Safari and Chrome */
+    }
 
     .images {
-      flex: 2;
-      display: flex;
-      justify-content: center;
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+      scrollbar-width: none; /* Firefox */
+      flex: 5;
+      overflow-y: auto;
+      position: relative;
 
-      img {
-        max-width: 500px;
-        object-fit: cover;
+      .about1 {
+        width: 75%;
+        position: absolute;
+        top: 0;
+        left: 50px;
+        z-index: -1;
+      }
+
+      .about3 {
+        width: 45%;
+        position: absolute;
+        top: 170px;
+        right: 0;
+      }
+
+      .about4 {
+        width: 45%;
+        position: absolute;
+        top: 400px;
+        left: 0;
+        z-index: -1;
+      }
+
+      .about2 {
+        width: 60%;
+        position: absolute;
+        top: 740px;
+        right: 70px;
+        z-index: -1;
       }
     }
 
     .text {
+      height: 100%;
+      width: 100%;
       flex: 3;
       display: flex;
       justify-content: center;
 
       .text-container {
+        height: 99%;
+        width: 100%;
         display: flex;
         gap: 40px;
         flex-direction: column;
+        justify-content: space-between;
 
         p {
-          font-size: 1.8em;
+          font-size: 4vh;
+        }
+
+        a {
+          color: black;
         }
 
         .details {
           display: flex;
+          justify-content: space-between;
           gap: 20px;
 
+          img {
+            width: 50%;
+          }
+
           p {
-            flex: 1;
-            font-size: 1.3em;
+            font-size: 2.5vh;
+          }
+
+          a {
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
           }
         }
       }
     }
   }
 
-  .about-mobile {
-    height: 100%;
+  .footer {
+    flex-shrink: 0;
+  }
+}
 
-    .text {
+.about-mobile {
+
+  .header {
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+  }
+
+  .about-container {
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    overflow: auto;
+
+    .about-content {
+      margin: 15px;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 20px;
 
       p {
-        font-size: 1.5em;
+        font-size: 2.1em;
       }
 
-      .details {
-        display: flex;
+      .calendar-img {
+        height: 500px;
+        object-fit: cover;
+      }
 
-        p {
-          flex: 1;
-          font-size: 0.6em;
+      .text {
+        width: 75%;
+      }
+
+      .button {
+        position: relative;
+
+        img {
+          width: 50%;
+          position: absolute;
+          right: 0;
         }
       }
     }
+  }
+
+  .footer {
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
   }
 }
