@@ -28,7 +28,7 @@ const About = () => {
               <p style={{ fontSize: "1.3em" }}>
                 By developing a form of hyper sexual visual language, we reclaim
                 the traditional use of women's bodies in our culture and place
-                it a the center of our political project.
+                it at the center of our political project.
               </p>
               <a href="https://www.hydra-berlin.de/">
                 <img className="text" src="/images/about/text.PNG" alt="text" />
@@ -75,7 +75,7 @@ const About = () => {
                 <p>
                   By developing a form of hyper sexual visual language, we
                   reclaim the traditional use of women's bodies in our culture
-                  and place it a the center of our political project.
+                  and place it at the center of our political project.
                 </p>
                 <p style={{ fontWeight: "bold" }}>
                   This year PLAYBABE supports Sex Workers' Rights and give 100%
