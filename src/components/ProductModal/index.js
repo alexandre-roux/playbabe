@@ -72,11 +72,14 @@ const ProductModal = ({ name, price, setDisplayModal }) => {
                 <p>
                   Format: 29.7 x 42cm
                   <br />
-                  Printed on Recycled 250g/m paper
-                  <br />
-                  Binded with a metal spiral
-                  <br />
                   12 x A3 exclusive photographies
+                  <br />
+                  Printed on Recycled 250g/m shiny paper and binded with a metal
+                  spiralcolored in Siver.
+                  <br />
+                  <br />
+                  100 % of the calendars' sales benefits will be this year given
+                  to HYDRA Berlin.
                 </p>
               ) : name.includes("Thong") ? (
                 <p>
