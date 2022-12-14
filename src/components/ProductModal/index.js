@@ -13,7 +13,7 @@ const ProductModal = ({ name, price, setDisplayModal }) => {
       i++;
       if (i > 3) i = 1;
       setImage("calendar" + i);
-    }, 3000);
+    }, 2000);
 
     return () => clearInterval(intervalId);
   }, []);
