@@ -96,6 +96,8 @@ const ProductPage = () => {
               <a href="https://buy.stripe.com/00g00aea7cbO78kcMO">
                 <img src="/images/eshop/order-yours-white.png" alt="calendar" />
               </a>
+            ) : name.includes("Screenprinted") ? (
+              <img src="/images/eshop/sold-out-yellow.png" alt="calendar" />
             ) : (
               <a href="mailto:info@playbabe.org">
                 <img src="/images/eshop/contact-us-white.png" alt="calendar" />
