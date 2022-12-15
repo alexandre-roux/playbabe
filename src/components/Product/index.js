@@ -19,9 +19,7 @@ const Product = ({ product }) => {
         </div>
       </div>
       {displayModal &&
-        !(
-          product.name.includes("XXL") || product.name.includes("Screenprinted")
-        ) &&
+        !product.name.includes("XXL") &&
         (isMobile ? (
           <Navigate
             to="/product"
