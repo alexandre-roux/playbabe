@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const ProductModal = ({ name, price, setDisplayModal }) => {
+const ProductModal = ({ product, setDisplayModal }) => {
   const [image, setImage] = useState("calendar1");
 
   useEffect(() => {
@@ -33,11 +33,9 @@ const ProductModal = ({ name, price, setDisplayModal }) => {
           <div className="images">
             <img
               src={
-                name.includes("Calendar")
+                product.name.includes("Calendar")
                   ? "/images/eshop/" + image + ".jpg"
-                  : name.includes("Thong")
-                  ? "/images/eshop/string1.jpg"
-                  : "/images/eshop/tee-shirt1.jpeg"
+                  : product.imageDetailURL
               }
               alt="calendar"
             />
@@ -45,12 +43,12 @@ const ProductModal = ({ name, price, setDisplayModal }) => {
           <div className="text-button">
             <div className="text">
               <div className="title-price">
-                {name.includes("Calendar") ? (
+                {product.name.includes("Calendar") ? (
                   <p>
                     CALENDAR A3
                     <br /> - Edition 2023
                   </p>
-                ) : name.includes("Thong") ? (
+                ) : product.name.includes("Thong") ? (
                   <p>
                     PLAYBABE 23
                     <br />
@@ -66,9 +64,9 @@ const ProductModal = ({ name, price, setDisplayModal }) => {
                     BODY OF A PORNSTAR »
                   </p>
                 )}
-                <p className="price">{price + " €"}</p>
+                <p className="price">{product.price + " €"}</p>
               </div>
-              {name.includes("Calendar") ? (
+              {product.name.includes("Calendar") ? (
                 <p>
                   Format: 29.7 x 42cm
                   <br />
@@ -81,7 +79,7 @@ const ProductModal = ({ name, price, setDisplayModal }) => {
                   100 % of the calendars' sales benefits will be this year given
                   to HYDRA Berlin.
                 </p>
-              ) : name.includes("Thong") ? (
+              ) : product.name.includes("Thong") ? (
                 <p>
                   Hand sewn underwear made with upcycled fabrics, adjustable and
                   in different patterns, colors and sizes. We produce once we
@@ -96,14 +94,14 @@ const ProductModal = ({ name, price, setDisplayModal }) => {
               )}
             </div>
             <div className="button">
-              {name.includes("Calendar") ? (
+              {product.name.includes("Calendar") ? (
                 <a href="https://buy.stripe.com/00g00aea7cbO78kcMO">
                   <img
                     src="/images/eshop/order-yours-white.png"
                     alt="order-yours"
                   />
                 </a>
-              ) : name.includes("Screenprinted") ? (
+              ) : product.name.includes("Screenprinted") ? (
                 <img src="/images/eshop/sold-out-yellow.png" alt="calendar" />
               ) : (
                 <a href="mailto:info@playbabe.org">
