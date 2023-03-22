@@ -4,10 +4,11 @@ import Footer from "../../components/Footer";
 
 import "./index.scss";
 import { useMediaQuery } from "react-responsive";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const About = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 1000px)" });
+  const navigate = useNavigate();
 
   return (
     <>
@@ -98,6 +99,7 @@ const About = () => {
                       src="/images/about/button.PNG"
                       alt="button"
                       className="order-yours"
+                      onClick={() => navigate("/eshop")}
                     />
                   </div>
                   <p>
@@ -106,7 +108,6 @@ const About = () => {
                     & Lucy Owen Jones
                     <br />
                     Founders of PLAYBABE
-                    <br />
                     <br />
                     <a href="mailto:info@playbabe.org">info@playbabe.org</a>
                   </p>

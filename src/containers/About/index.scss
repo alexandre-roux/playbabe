@@ -92,12 +92,20 @@
 
             .order-yours {
               height: 100%;
+
+              &:hover {
+                cursor: pointer;
+              }
             }
           }
 
           p {
             width: 40%;
             font-size: 2.5vh;
+
+            a {
+              font-weight: bold;
+            }
           }
         }
       }
