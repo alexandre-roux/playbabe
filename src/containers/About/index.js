@@ -93,9 +93,13 @@ const About = () => {
                   </a>
                 </p>
                 <div className="details">
-                  <Link to={"/eshop"}>
-                    <img src="/images/about/button.PNG" alt="button" />
-                  </Link>
+                  <div className="order-yours-container">
+                    <img
+                      src="/images/about/button.PNG"
+                      alt="button"
+                      className="order-yours"
+                    />
+                  </div>
                   <p>
                     Aurélia Majean
                     <br />
