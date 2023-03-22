@@ -22,7 +22,6 @@
 
     .images {
       width: 55%;
-      //flex: 5;
       -ms-overflow-style: none; /* Internet Explorer 10+ */
       scrollbar-width: none; /* Firefox */
       overflow-y: auto;
@@ -31,7 +30,7 @@
       .about1 {
         width: 75%;
         position: absolute;
-        top: 0;
+        top: 10px;
         left: 50px;
         z-index: -1;
       }
@@ -39,14 +38,14 @@
       .about3 {
         width: 45%;
         position: absolute;
-        top: 370px;
+        top: 380px;
         right: 0;
       }
 
       .about4 {
         width: 45%;
         position: absolute;
-        top: 500px;
+        top: 510px;
         left: 0;
         z-index: -1;
       }
@@ -54,7 +53,7 @@
       .about2 {
         width: 60%;
         position: absolute;
-        top: 920px;
+        top: 930px;
         right: 70px;
         z-index: -1;
       }
@@ -63,7 +62,7 @@
     .text {
       height: 100%;
       width: 45%;
-      //flex: 3;
+      margin-top: 10px;
       display: flex;
       justify-content: center;
 
@@ -84,13 +83,12 @@
         .details {
           display: flex;
           justify-content: space-between;
-          gap: 20px;
           height: 140px;
 
           .order-yours-container {
+            width: 60%;
             display: flex;
             justify-content: center;
-            width: 100%;
 
             .order-yours {
               height: 100%;
@@ -98,6 +96,7 @@
           }
 
           p {
+            width: 40%;
             font-size: 2.5vh;
           }
         }
