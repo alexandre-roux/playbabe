@@ -18,15 +18,17 @@ const Eshop = () => {
     {
       imageURL: "/images/eshop/string.png",
       name: "« PLAYBABE » Upcycled Thong",
-      price: 75,
+      price: 65,
+      imageDetailURL: "/images/eshop/string1.jpg",
     },
     {
       imageURL: "/images/eshop/tee-shirt.jpeg",
       name: "Screenprinted Tee shirts",
       price: 25,
+      imageDetailURL: "/images/eshop/tee-shirt1.jpeg",
     },
     {
-      imageURL: "/images/eshop/poster.png",
+      imageURL: "/images/eshop/poster.jpg",
       name: "XXL poster (A0 format)",
       price: 125,
     },

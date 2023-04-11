@@ -21,16 +21,9 @@ const Product = ({ product }) => {
       {displayModal &&
         !product.name.includes("XXL") &&
         (isMobile ? (
-          <Navigate
-            to="/product"
-            state={{ name: product.name, price: product.price }}
-          />
+          <Navigate to="/product" state={{ product: product }} />
         ) : (
-          <ProductModal
-            name={product.name}
-            price={product.price}
-            setDisplayModal={setDisplayModal}
-          />
+          <ProductModal product={product} setDisplayModal={setDisplayModal} />
         ))}
     </>
   );
