@@ -14,23 +14,28 @@ const Eshop = () => {
       imageURL: "/images/eshop/calendar.jpg",
       name: "Calendar Edition 2023",
       price: 35,
+      title: "CALENDAR A3\n - Edition 2023",
     },
     {
       imageURL: "/images/eshop/string.png",
       name: "« PLAYBABE » Upcycled Thong",
       price: 65,
       imageDetailURL: "/images/eshop/string1.jpg",
+      title: "PLAYBABE 23\nTHONG",
     },
     {
       imageURL: "/images/eshop/tee-shirt.jpeg",
       name: "Screenprinted Tee shirts",
       price: 25,
       imageDetailURL: "/images/eshop/tee-shirt1.jpeg",
+      title: "UPCYCLED\nTEE SHIRT\n« FACE OF AN ANGEL\nBODY OF A PORNSTAR »",
     },
     {
       imageURL: "/images/eshop/poster.jpg",
       name: "XXL poster (A0 format)",
       price: 125,
+      imageDetailURL: "/images/eshop/poster.jpg",
+      title: "A0 Poster\nXXL Format",
     },
   ];
 

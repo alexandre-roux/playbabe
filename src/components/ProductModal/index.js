@@ -43,27 +43,7 @@ const ProductModal = ({ product, setDisplayModal }) => {
           <div className="text-button">
             <div className="text">
               <div className="title-price">
-                {product.name.includes("Calendar") ? (
-                  <p>
-                    CALENDAR A3
-                    <br /> - Edition 2023
-                  </p>
-                ) : product.name.includes("Thong") ? (
-                  <p>
-                    PLAYBABE 23
-                    <br />
-                    THONG
-                  </p>
-                ) : (
-                  <p>
-                    UPCYCLED
-                    <br />
-                    TEE SHIRT
-                    <br />« FACE OF AN ANGEL
-                    <br />
-                    BODY OF A PORNSTAR »
-                  </p>
-                )}
+                <p className="title">{product.title}</p>
                 <p className="price">{product.price + " €"}</p>
               </div>
               {product.name.includes("Calendar") ? (
@@ -102,7 +82,7 @@ const ProductModal = ({ product, setDisplayModal }) => {
                   />
                 </a>
               ) : product.name.includes("Screenprinted") ? (
-                <img src="/images/eshop/sold-out-yellow.png" alt="calendar" />
+                <img src="/images/eshop/sold-out-yellow.png" alt="sold-out" />
               ) : (
                 <a href="mailto:info@playbabe.org">
                   <img
