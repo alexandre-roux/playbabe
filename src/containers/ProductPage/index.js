@@ -6,7 +6,7 @@ import "./index.scss";
 
 const ProductPage = () => {
   const location = useLocation();
-  const { product } = location.state;
+  const product = location.state.product;
   const [image, setImage] = useState("calendar1");
   const navigate = useNavigate();
 
