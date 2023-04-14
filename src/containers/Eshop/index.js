@@ -15,6 +15,8 @@ const Eshop = () => {
       name: "Calendar Edition 2023",
       price: 35,
       title: "CALENDAR A3\n - Edition 2023",
+      details:
+        "Format: 29.7 x 42cm\n12 x A3 exclusive photographies\nPrinted on Recycled 250g/m shiny paper and binded with a metal\nspiralcolored in Siver.\n\n100 % of the calendars' sales benefits will be this year given\nto HYDRA Berlin.",
     },
     {
       imageURL: "/images/eshop/string.png",
@@ -22,6 +24,8 @@ const Eshop = () => {
       price: 65,
       imageDetailURL: "/images/eshop/string1.jpg",
       title: "PLAYBABE 23\nTHONG",
+      details:
+        "Hand sewn underwear made with upcycled fabrics, adjustable and in different patterns, colors and sizes. We produce once we receive order, let us know what you would love to have &lt;3",
     },
     {
       imageURL: "/images/eshop/tee-shirt.jpeg",
@@ -29,13 +33,17 @@ const Eshop = () => {
       price: 25,
       imageDetailURL: "/images/eshop/tee-shirt1.jpeg",
       title: "UPCYCLED\nTEE SHIRT\n« FACE OF AN ANGEL\nBODY OF A PORNSTAR »",
+      details:
+        "Screen-Printed Upcycled tee shirts with natural inks. Available in different colors and sizes. Please get in touch with us to know which one are still up for a grab :)",
     },
     {
-      imageURL: "/images/eshop/poster.jpg",
+      imageURL: "/images/eshop/poster/lara.jpg",
       name: "XXL poster (A0 format)",
       price: 125,
-      imageDetailURL: "/images/eshop/poster.jpg",
+      imageDetailURL: "/images/eshop/poster/lara.jpg",
       title: "A0 Poster\nXXL Format",
+      details:
+        "Format: 84 x 120cm 6 vertical and 3 landscape. Photo paper, Silk Matt 180g/m, unreleased photographs. If you would like to purchase a print, please write us x",
     },
   ];
 

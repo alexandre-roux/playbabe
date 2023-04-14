@@ -46,31 +46,13 @@ const ProductModal = ({ product, setDisplayModal }) => {
                 <p className="title">{product.title}</p>
                 <p className="price">{product.price + " €"}</p>
               </div>
+              <p className="details">{product.details}</p>
               {product.name.includes("Calendar") ? (
-                <p>
-                  Format: 29.7 x 42cm
-                  <br />
-                  12 x A3 exclusive photographies
-                  <br />
-                  Printed on Recycled 250g/m shiny paper and binded with a metal
-                  spiralcolored in Siver.
-                  <br />
-                  <br />
-                  100 % of the calendars' sales benefits will be this year given
-                  to HYDRA Berlin.
-                </p>
+                <p></p>
               ) : product.name.includes("Thong") ? (
-                <p>
-                  Hand sewn underwear made with upcycled fabrics, adjustable and
-                  in different patterns, colors and sizes. We produce once we
-                  receive order, let us know what you would love to have &lt;3
-                </p>
+                <p></p>
               ) : (
-                <p>
-                  Screen-Printed Upcycled tee shirts with natural inks.
-                  Available in different colors and sizes. Please get in touch
-                  with us to know which one are still up for a grab :)
-                </p>
+                <p></p>
               )}
             </div>
             <div className="button">
