@@ -16,7 +16,7 @@ const Eshop = () => {
       price: 35,
       title: "CALENDAR A3\n - Edition 2023",
       details:
-        "Format: 29.7 x 42cm\n12 x A3 exclusive photographies\nPrinted on Recycled 250g/m shiny paper and binded with a metal\nspiralcolored in Siver.\n\n100 % of the calendars' sales benefits will be this year given\nto HYDRA Berlin.",
+        "Format: 29.7 x 42cm\n12 x A3 exclusive photographies\nPrinted on Recycled 250g/m shiny paper and binded with a metal spiralcolored in Silver.\n\n100 % of the calendars' sales benefits will be this year given\nto HYDRA Berlin.",
     },
     {
       imageURL: "/images/eshop/string.png",
