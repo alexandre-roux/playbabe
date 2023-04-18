@@ -55,6 +55,48 @@ const ProductModal = ({ product, setDisplayModal }) => {
                 <p></p>
               )}
             </div>
+            <div className="posters">
+              <div className="posters1">
+                <img
+                  src="/public/images/eshop/posters/chancel-small.jpg"
+                  alt="chancel"
+                />
+                <img
+                  src="/public/images/eshop/posters/lisa-small.jpg"
+                  alt="lisa"
+                />
+                <img
+                  src="/public/images/eshop/posters/nasi-small.jpg"
+                  alt="nasi"
+                />
+                <img
+                  src="/public/images/eshop/posters/sabi-small.jpg"
+                  alt="sabi"
+                />
+                <img
+                  src="/public/images/eshop/posters/margarita-small.jpg"
+                  alt="margarita"
+                />
+              </div>
+              <div className="posters2">
+                <img
+                  src="/public/images/eshop/posters/jasmin-small.jpg"
+                  alt="jasmin"
+                />
+                <img
+                  src="/public/images/eshop/posters/lara-small.jpg"
+                  alt="lara"
+                />
+                <img
+                  src="/public/images/eshop/posters/misha-small.jpg"
+                  alt="misha"
+                />
+                <img
+                  src="/public/images/eshop/posters/audrey-small.jpg"
+                  alt="audrey"
+                />
+              </div>
+            </div>
             <div className="button">
               {product.name.includes("Calendar") ? (
                 <a href="https://buy.stripe.com/00g00aea7cbO78kcMO">
