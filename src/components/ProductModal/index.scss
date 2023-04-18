@@ -76,6 +76,10 @@
               font-size: 1.8vw;
             }
 
+            .title, .details {
+              white-space: pre-line;
+            }
+
             .price {
               white-space: nowrap;
             }

@@ -39,6 +39,10 @@
           font-size: 25px;
         }
 
+        .title, .details {
+          white-space: pre-line;
+        }
+
         .price {
           white-space: nowrap;
         }

@@ -6,7 +6,7 @@ import "./index.scss";
 
 const ProductPage = () => {
   const location = useLocation();
-  const { product } = location.state;
+  const product = location.state.product;
   const [image, setImage] = useState("calendar1");
   const navigate = useNavigate();
 
@@ -35,72 +35,31 @@ const ProductPage = () => {
             src={
               product.name.includes("Calendar")
                 ? "/images/eshop/" + image + ".jpg"
-                : product.name.includes("Thong")
-                ? "/images/eshop/string1.jpg"
-                : "/images/eshop/tee-shirt1.jpeg"
+                : product.imageDetailURL
             }
             alt="calendar"
           />
           <div className="title-price">
-            {product.name.includes("Calendar") ? (
-              <p>
-                CALENDAR A3
-                <br /> - Edition 2023
-              </p>
-            ) : product.name.includes("Thong") ? (
-              <p>
-                PLAYBABE 23
-                <br />
-                THONG
-              </p>
-            ) : (
-              <p>
-                UPCYCLED
-                <br />
-                TEE SHIRT
-                <br />« FACE OF AN ANGEL
-                <br />
-                BODY OF A PORNSTAR »
-              </p>
-            )}
+            <p className="title">{product.title}</p>
             <p className="price">{product.price + " €"}</p>
           </div>
           <div className="description-button">
-            {product.name.includes("Calendar") ? (
-              <p>
-                Format: 29.7 x 42cm
-                <br />
-                12 x A3 exclusive photographies
-                <br />
-                Printed on Recycled 250g/m shiny paper and binded with a metal
-                spiralcolored in Siver.
-                <br />
-                <br />
-                100 % of the calendars' sales benefits will be this year given
-                to HYDRA Berlin.
-              </p>
-            ) : product.name.includes("Thong") ? (
-              <p>
-                Hand sewn underwear made with upcycled fabrics, adjustable and
-                in different patterns, colors and sizes. We produce once we
-                receive order, let us know what you would love to have &lt;3
-              </p>
-            ) : (
-              <p>
-                Screen-Printed Upcycled tee shirts with natural inks. Available
-                in different colors and sizes. Please get in touch with us to
-                know which one are still up for a grab :)
-              </p>
-            )}
+            <p className="details">{product.details}</p>
             {product.name.includes("Calendar") ? (
               <a href="https://buy.stripe.com/00g00aea7cbO78kcMO">
-                <img src="/images/eshop/order-yours-white.png" alt="calendar" />
+                <img
+                  src="/images/eshop/order-yours-white.png"
+                  alt="order-yours"
+                />
               </a>
             ) : product.name.includes("Screenprinted") ? (
-              <img src="/images/eshop/sold-out-yellow.png" alt="calendar" />
+              <img src="/images/eshop/sold-out-yellow.png" alt="sold-out" />
             ) : (
               <a href="mailto:info@playbabe.org">
-                <img src="/images/eshop/contact-us-white.png" alt="calendar" />
+                <img
+                  src="/images/eshop/contact-us-white.png"
+                  alt="contact-us"
+                />
               </a>
             )}
           </div>
