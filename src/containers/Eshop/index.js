@@ -38,7 +38,7 @@ const Eshop = () => {
     },
     {
       imageURL: "/images/eshop/posters/lara.jpg",
-      name: "XXL poster (A0 format)",
+      name: "XXL Poster (A0 format)",
       price: 125,
       imageDetailURL: "/images/eshop/posters/lara.jpg",
       title: "A0 Poster\nXXL Format",
