@@ -62,6 +62,98 @@
           }
         }
 
+        .posters {
+          flex: 1;
+          display: flex;
+          gap: 5px;
+
+          div {
+            flex: 1;
+            display: flex;
+            gap: 5px;
+            background-size: cover;
+          }
+
+          .posters1 {
+            flex: 4;
+            flex-direction: column;
+
+            .posters11 {
+              flex: 4;
+
+              .chancel {
+                background-image: url("../../../public/images/eshop/posters/chancel-small.jpg");
+              }
+
+              .lisa {
+                background-image: url("../../../public/images/eshop/posters/lisa-small.jpg");
+              }
+
+              .nasi {
+                background-image: url("../../../public/images/eshop/posters/nasi-small.jpg");
+              }
+
+              div:hover {
+                cursor: pointer;
+              }
+            }
+
+            .posters12 {
+              flex: 3;
+
+              .sabi {
+                background-image: url("../../../public/images/eshop/posters/sabi-small.jpg");
+              }
+
+              .margarita {
+                background-image: url("../../../public/images/eshop/posters/margarita-small.jpg");
+              }
+
+              div:hover {
+                cursor: pointer;
+              }
+            }
+          }
+
+          .posters2 {
+            flex: 3;
+            flex-direction: column;
+
+            .posters21 {
+              flex: 3;
+
+              .jasmin {
+                flex: 2;
+                background-image: url("../../../public/images/eshop/posters/jasmin-small.jpg");
+              }
+
+              .lara {
+                background-image: url("../../../public/images/eshop/posters/lara-small.jpg");
+              }
+
+              div:hover {
+                cursor: pointer;
+              }
+            }
+
+            .posters22 {
+              flex: 4;
+
+              .misha {
+                background-image: url("../../../public/images/eshop/posters/misha-small.jpg");
+              }
+
+              .audrey {
+                background-image: url("../../../public/images/eshop/posters/audrey-small.jpg");
+              }
+
+              div:hover {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
         .text {
           flex: 1;
           display: flex;
