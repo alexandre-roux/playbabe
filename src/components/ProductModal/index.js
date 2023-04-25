@@ -52,7 +52,7 @@ const ProductModal = ({ product, setDisplayModal }) => {
         setPosterNumber("9");
       }
     }
-  }, [posterName]);
+  }, []);
 
   return (
     <div className="modal-overlay" onClick={() => setDisplayModal(false)}>
@@ -75,7 +75,7 @@ const ProductModal = ({ product, setDisplayModal }) => {
                   ? posterImage
                   : product.imageDetailURL
               }
-              alt="product-image"
+              alt="product"
             />
             {product.name.includes("Poster") && (
               <p>
