@@ -52,7 +52,7 @@ const ProductModal = ({ product, setDisplayModal }) => {
         setPosterNumber("9");
       }
     }
-  }, [posterName]);
+  }, [posterName, product.name]);
 
   return (
     <div className="modal-overlay" onClick={() => setDisplayModal(false)}>
