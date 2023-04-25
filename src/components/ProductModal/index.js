@@ -4,7 +4,7 @@ import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProductModal = ({ product, setDisplayModal }) => {
-  const [image, setImage] = useState("calendar1");
+  const [calendarImage, setCalendarImage] = useState("calendar1");
 
   useEffect(() => {
     let i = 1;
@@ -12,7 +12,7 @@ const ProductModal = ({ product, setDisplayModal }) => {
     const intervalId = setInterval(() => {
       i++;
       if (i > 3) i = 1;
-      setImage("calendar" + i);
+      setCalendarImage("calendar" + i);
     }, 2000);
 
     return () => clearInterval(intervalId);
@@ -34,7 +34,7 @@ const ProductModal = ({ product, setDisplayModal }) => {
             <img
               src={
                 product.name.includes("Calendar")
-                  ? "/images/eshop/" + image + ".jpg"
+                  ? "/images/eshop/" + calendarImage + ".jpg"
                   : product.imageDetailURL
               }
               alt="calendar"
