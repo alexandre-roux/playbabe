@@ -57,44 +57,25 @@ const ProductModal = ({ product, setDisplayModal }) => {
             </div>
             <div className="posters">
               <div className="posters1">
-                <img
-                  src="/public/images/eshop/posters/chancel-small.jpg"
-                  alt="chancel"
-                />
-                <img
-                  src="/public/images/eshop/posters/lisa-small.jpg"
-                  alt="lisa"
-                />
-                <img
-                  src="/public/images/eshop/posters/nasi-small.jpg"
-                  alt="nasi"
-                />
-                <img
-                  src="/public/images/eshop/posters/sabi-small.jpg"
-                  alt="sabi"
-                />
-                <img
-                  src="/public/images/eshop/posters/margarita-small.jpg"
-                  alt="margarita"
-                />
+                <div className="posters11">
+                  <div className="chancel" />
+                  <div className="lisa" />
+                  <div className="nasi" />
+                </div>
+                <div className="posters12">
+                  <div className="sabi" />
+                  <div className="margarita" />
+                </div>
               </div>
               <div className="posters2">
-                <img
-                  src="/public/images/eshop/posters/jasmin-small.jpg"
-                  alt="jasmin"
-                />
-                <img
-                  src="/public/images/eshop/posters/lara-small.jpg"
-                  alt="lara"
-                />
-                <img
-                  src="/public/images/eshop/posters/misha-small.jpg"
-                  alt="misha"
-                />
-                <img
-                  src="/public/images/eshop/posters/audrey-small.jpg"
-                  alt="audrey"
-                />
+                <div className="posters21">
+                  <div className="jasmin" />
+                  <div className="lara" />
+                </div>
+                <div className="posters22">
+                  <div className="misha" />
+                  <div className="audrey" />
+                </div>
               </div>
             </div>
             <div className="button">

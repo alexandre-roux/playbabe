@@ -64,19 +64,103 @@
 
         .posters {
           flex: 1;
-          //background-color: white;
           display: flex;
+          gap: 5px;
 
           .posters1 {
             flex: 4;
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 5px;
+
+            .posters11 {
+              flex: 4;
+              display: flex;
+              gap: 5px;
+
+              .chancel {
+                flex: 1;
+                background-image: url("../../../public/images/eshop/posters/chancel-small.jpg");
+                background-size: cover;
+              }
+
+              .lisa {
+                flex: 1;
+                background-image: url("../../../public/images/eshop/posters/lisa-small.jpg");
+                background-size: cover;
+              }
+
+              .nasi {
+                flex: 1;
+                background-image: url("../../../public/images/eshop/posters/nasi-small.jpg");
+                background-size: cover;
+              }
+            }
+
+            .posters12 {
+              flex: 3;
+              display: flex;
+              gap: 5px;
+
+              .sabi {
+                flex: 1;
+                background-image: url("../../../public/images/eshop/posters/sabi-small.jpg");
+                background-size: cover;
+              }
+
+              .margarita {
+                flex: 1;
+                background-image: url("../../../public/images/eshop/posters/margarita-small.jpg");
+                background-size: cover;
+              }
+            }
           }
 
           .posters2 {
             flex: 3;
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 5px;
+
+            .posters21 {
+              flex: 3;
+              display: flex;
+              gap: 5px;
+
+              .jasmin {
+                flex: 2;
+                background-image: url("../../../public/images/eshop/posters/jasmin-small.jpg");
+                background-size: cover;
+              }
+
+              .lara {
+                flex: 1;
+                background-image: url("../../../public/images/eshop/posters/lara-small.jpg");
+                background-size: cover;
+              }
+            }
+
+            .posters22 {
+              flex: 4;
+              display: flex;
+              gap: 5px;
+
+              .misha {
+                flex: 1;
+                background-image: url("../../../public/images/eshop/posters/misha-small.jpg");
+                background-size: cover;
+              }
+
+              .audrey {
+                flex: 1;
+                background-image: url("../../../public/images/eshop/posters/audrey-small.jpg");
+                background-size: cover;
+              }
+            }
+          }
+
+          img {
+            object-fit: cover;
           }
         }
 
