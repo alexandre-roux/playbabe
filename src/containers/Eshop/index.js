@@ -25,7 +25,7 @@ const Eshop = () => {
       imageDetailURL: "/images/eshop/string1.jpg",
       title: "PLAYBABE 23\nTHONG",
       details:
-        "Hand sewn underwear made with upcycled fabrics, adjustable and in different patterns, colors and sizes. We produce once we receive order, let us know what you would love to have &lt;3",
+        "Hand sewn underwear made with upcycled fabrics, adjustable and in different patterns, colors and sizes. We produce once we receive order, let us know what you would love to have <3",
     },
     {
       imageURL: "/images/eshop/tee-shirt.jpeg",
