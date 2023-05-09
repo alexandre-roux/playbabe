@@ -1,0 +1,43 @@
+.images::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.images {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  overflow-y: auto;
+  position: relative;
+
+  .about1 {
+    width: 75%;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+  }
+
+  .about3 {
+    width: 45%;
+    position: absolute;
+    top: 380px;
+    right: 0;
+  }
+
+  .about4 {
+    width: 45%;
+    position: absolute;
+    top: 510px;
+    left: 0;
+  }
+
+  .about2 {
+    width: 60%;
+    position: absolute;
+    top: 930px;
+    right: 70px;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}

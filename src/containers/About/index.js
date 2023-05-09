@@ -5,6 +5,7 @@ import Footer from "../../components/Footer";
 import "./index.scss";
 import { useMediaQuery } from "react-responsive";
 import { Link, useNavigate } from "react-router-dom";
+import Images from "../Images";
 
 const About = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 1000px)" });
@@ -50,26 +51,7 @@ const About = () => {
           <Header classname="header" />
           <div className="about-content">
             <div className="images">
-              <img
-                className="about1"
-                src="/images/about/about1.jpg"
-                alt="about1"
-              />
-              <img
-                className="about3"
-                src="/images/about/about3.jpg"
-                alt="about3"
-              />
-              <img
-                className="about4"
-                src="/images/about/about4.jpg"
-                alt="about4"
-              />
-              <img
-                className="about2"
-                src="/images/about/about2.jpg"
-                alt="about2"
-              />
+              <Images />
             </div>
             <div className="text">
               <div className="text-container">
