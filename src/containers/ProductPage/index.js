@@ -52,6 +52,13 @@ const ProductPage = () => {
                   alt="order-yours"
                 />
               </a>
+            ) : product.name.includes("Thong") ? (
+              <a href="https://buy.stripe.com/8wMaEO5DBcbO9gs7sy">
+                <img
+                  src="/images/eshop/order-yours-white.png"
+                  alt="order-yours"
+                />
+              </a>
             ) : product.name.includes("Screenprinted") ? (
               <img src="/images/eshop/sold-out-yellow.png" alt="sold-out" />
             ) : (
