@@ -5,13 +5,6 @@ const Images = () => {
   const targetRef = useRef(null);
 
   useEffect(() => {
-    const options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0,
-      // threshold: 0.5 // 50% visibility required to trigger the callback
-    };
-
     const callback = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -20,16 +13,18 @@ const Images = () => {
       });
     };
 
-    const observer = new IntersectionObserver(callback, options);
+    const observer = new IntersectionObserver(callback);
+
+    const currentTarget = targetRef.current; // Store the current target element
 
     if (targetRef.current) {
-      observer.observe(targetRef.current);
+      observer.observe(currentTarget);
     }
 
     // Cleanup observer on unmount
     return () => {
-      if (targetRef.current) {
-        observer.unobserve(targetRef.current);
+      if (currentTarget) {
+        observer.unobserve(currentTarget);
       }
     };
   }, []);
