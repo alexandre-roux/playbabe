@@ -5,22 +5,32 @@
   align-items: center;
   flex-wrap: nowrap;
 
+  .header {
+    position: fixed;
+    top: 0;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+  }
+
   .about-content {
-    width: 95%;
-    flex-grow: 1;
-    min-height: 2em;
-    display: flex;
-    gap: 50px;
+    margin: 50px 0;
+    width: 100%;
 
     .images {
-      height: 100%;
-      flex: 5;
+      top: 50px;
+      width: 75%;
     }
 
     .text {
+      position: fixed;
+      top: 50px;
+      bottom: 50px;
+      left: 60%;
       display: flex;
       justify-content: center;
-      flex: 3;
 
       .text-container {
         display: flex;
