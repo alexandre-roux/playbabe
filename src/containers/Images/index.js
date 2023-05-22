@@ -4,18 +4,26 @@ import "./index.scss";
 const Images = () => {
   return (
     <div className="images">
-      <div className="about1">
-        <img src="/images/about/about1.jpg" alt="about1" />
-      </div>
-      <div className="about3">
-        <img src="/images/about/about3.jpg" alt="about3" />
-      </div>
-      <div className="about4">
-        <img src="/images/about/about4.jpg" alt="about4" />
-      </div>
-      <div className="about2">
-        <img src="/images/about/about2.jpg" alt="about2" />
-      </div>
+      <img
+        className="about1 animate__animated animate__fadeInUp"
+        src="/images/about/about1.jpg"
+        alt="about1"
+      />
+      <img
+        className="about3 animate__animated animate__fadeInUp"
+        src="/images/about/about3.jpg"
+        alt="about3"
+      />
+      <img
+        className="about4 animate__animated animate__fadeInUp"
+        src="/images/about/about4.jpg"
+        alt="about4"
+      />
+      <img
+        className="about2 animate__animated animate__fadeInUp"
+        src="/images/about/about2.jpg"
+        alt="about2"
+      />
     </div>
   );
 };
