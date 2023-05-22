@@ -48,8 +48,11 @@ const About = () => {
         </div>
       ) : (
         <div className="about-desktop">
-          <Header className="header" />
+          <Header />
           <div className="about-content">
+            <div className="images">
+              <Images />
+            </div>
             <div className="text">
               <div className="text-container">
                 <p>
@@ -93,11 +96,8 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="images">
-              <Images />
-            </div>
           </div>
-          <Footer className="footer" />
+          <Footer />
         </div>
       )}
     </>
