@@ -20,7 +20,7 @@
   }
 
   .slide-in-animation {
-    animation: 0.5s ease-in 0s 1 slideInFromBottom;
+    animation: 0.5s ease 0s 1 slideInFromBottom;
     animation-fill-mode: forwards;
   }
 
@@ -30,7 +30,7 @@
     top: 10px;
     left: 50px;
     opacity: 0;
-    animation: 0.5s ease-in 0s 1 slideInFromBottom;
+    animation: 0.5s ease 0s 1 slideInFromBottom;
     animation-fill-mode: forwards;
   }
 
@@ -40,7 +40,7 @@
     top: 300px;
     right: 0;
     opacity: 0;
-    animation: 0.5s ease-in 0.25s 1 slideInFromBottom;
+    animation: 0.5s ease 0.25s 1 slideInFromBottom;
     animation-fill-mode: forwards;
   }
 
@@ -50,7 +50,7 @@
     top: 700px;
     left: 0;
     opacity: 0;
-    animation: 0.5s ease-in 0.5s 1 slideInFromBottom;
+    animation: 0.5s ease 0.5s 1 slideInFromBottom;
     animation-fill-mode: forwards;
   }
 

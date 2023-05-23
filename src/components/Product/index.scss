@@ -4,25 +4,53 @@
   cursor: pointer;
   display: flex;
   flex-direction: column;
-}
 
-.product-image {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
+  .product-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 
-.product-details {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .tee-shirts-image {
+    height: 100%;
+    width: 100%;
+    background-image: url("../../../public/images/eshop/tee-shirt.jpg");
+    background-size: cover;
+    background-position: center;
 
-.name {
-  font-size: 18px;
-}
+    .tee-shirts-image-overlay {
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.5s ease;
 
-.price {
-  font-size: 20px;
-  font-family: "GT America Extended Black", sans-serif;
+      img {
+        height: 175px;
+        opacity: 1;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .product-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .name {
+      font-size: 18px;
+    }
+
+    .price {
+      font-size: 20px;
+      font-family: "GT America Extended Black", sans-serif;
+    }
+  }
 }

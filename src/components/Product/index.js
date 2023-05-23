@@ -21,7 +21,16 @@ const Product = ({ product }) => {
   return (
     <>
       <div className="product" onClick={() => handleCLick()}>
-        <img className="product-image" src={product.imageURL} alt="product" />
+        {product.name.includes("shirts") ? (
+          <div className="tee-shirts-image">
+            <div className="tee-shirts-image-overlay">
+              <img src="/images/eshop/sold-out-yellow.png" alt="product" />
+            </div>
+          </div>
+        ) : (
+          <img className="product-image" src={product.imageURL} alt="product" />
+        )}
+
         <div className="product-details">
           <span className="name">{product.name}</span>
           <span className="price">{product.price} €</span>
