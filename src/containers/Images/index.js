@@ -55,6 +55,7 @@ const Images = () => {
         alt="about2"
         ref={targetRef}
       />
+      <div className="empty-div" />
     </div>
   );
 };
