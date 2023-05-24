@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 import "./index.scss";
 import { useMediaQuery } from "react-responsive";
 import { useNavigate } from "react-router-dom";
-import Images from "../Images";
+import Images from "../../components/Images";
 import AboutMobile from "../AboutMobile";
 
 const About = () => {
