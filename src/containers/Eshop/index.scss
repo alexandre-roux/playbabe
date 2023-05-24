@@ -1,24 +1,28 @@
 .eshop-desktop {
-  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+  }
 
   .eshop-content {
-    height: 70%;
-    max-width: 90%;
+    margin: 5% 0;
+    max-width: fit-content;
     display: flex;
-    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
-    .row {
-      height: 100%;
-      display: flex;
-      gap: 20px;
-
-      .product {
-        flex: 1;
-      }
+    .product {
+      flex-basis: 23%;
     }
   }
 }
