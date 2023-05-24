@@ -5,6 +5,7 @@ import Footer from "../../components/Footer";
 import "./index.scss";
 import Product from "../../components/Product";
 import { useMediaQuery } from "react-responsive";
+import EshopMobile from "../EshopMobile";
 
 const Eshop = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 1000px)" });
@@ -85,19 +86,7 @@ const Eshop = () => {
   return (
     <>
       {isMobile ? (
-        <div className="eshop-mobile">
-          <Header className="header" />
-          <div className="eshop-container">
-            <div className="eshop-content">
-              {data.map((product, index) => {
-                return (
-                  <Product classname="product" key={index} product={product} />
-                );
-              })}
-            </div>
-          </div>
-          <Footer className="footer" />
-        </div>
+        <EshopMobile data={data} />
       ) : (
         <div className="eshop-desktop">
           <Header className={"header"} />
