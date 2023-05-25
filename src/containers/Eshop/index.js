@@ -12,6 +12,14 @@ const Eshop = () => {
 
   const data = [
     {
+      imageURL: "/images/eshop/calendarp3.jpg",
+      name: "PLAYBABE x P3 Pride Edition",
+      price: 22,
+      title: "PLAYBABE X P3\n - Pride Edition 2023",
+      details:
+        "Format: 29.7 x 42cm\n12 x A4 exclusive photographies\nPrinted on Recycled 250g/m shiny paper and binded with a metal spiralcolored in Silver.\n\n100 % of the calendars' sales benefits will be for this edition given\nto “Le Syndicat du Strass” in France.\n",
+    },
+    {
       imageURL: "/images/eshop/calendar.jpg",
       name: "Calendar Edition 2023",
       price: 35,
@@ -36,15 +44,6 @@ const Eshop = () => {
       title: "UPCYCLED\nTEE SHIRT\n« FACE OF AN ANGEL\nBODY OF A PORNSTAR »",
       details:
         "Screen-Printed Upcycled tee shirts with natural inks. Available in different colors and sizes. Please get in touch with us to know which one are still up for a grab :)",
-    },
-    {
-      imageURL: "/images/eshop/posters/lara.jpg",
-      name: "XXL Poster (A0 format)",
-      price: 125,
-      imageDetailURL: "/images/eshop/posters/lara.jpg",
-      title: "A0 Poster\nXXL Format",
-      details:
-        "Format: 84 x 120cm 6 vertical and 3 landscape. Photo paper, Silk Matt 180g/m, unreleased photographs. If you would like to purchase a print, please write us x",
     },
   ];
 

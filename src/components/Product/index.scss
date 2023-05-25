@@ -23,7 +23,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      opacity: 0;
+      opacity: 1;
       transition: opacity 0.5s ease;
 
       img {
@@ -32,7 +32,7 @@
       }
 
       &:hover {
-        opacity: 1;
+        opacity: 0;
       }
     }
   }
