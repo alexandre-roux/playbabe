@@ -1,11 +1,7 @@
 .eshop-mobile {
   .header {
-    height: 50px;
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
-    overflow: hidden;
   }
 
   .eshop-container {
@@ -30,11 +26,7 @@
   }
 
   .footer {
-    height: 50px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: hidden;
   }
 }
