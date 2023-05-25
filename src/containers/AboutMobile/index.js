@@ -32,7 +32,7 @@ const AboutMobile = () => {
             <img className="text" src="/images/about/text.PNG" alt="text" />
           </a>
           <Link to="/eshop" className="button">
-            <img src="/images/about/button.PNG" alt="button" />
+            <img src="/images/about/order-yours-black.png" alt="button" />
           </Link>
         </div>
       </div>
