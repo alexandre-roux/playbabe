@@ -25,7 +25,7 @@ const Eshop = () => {
       ],
       title: "PLAYBABE X P3\n - Pride Edition 2023",
       details:
-        "Format: 29.7 x 42cm\n12 x A4 exclusive photographies\nPrinted on Recycled 250g/m shiny paper and binded with a metal spiralcolored in Silver.\n\n100 % of the calendars' sales benefits will be for this edition given\nto “Le Syndicat du Strass” in France.\n",
+        "Format: 21 x 29.7cm\n12 x A4 exclusive photographies\nPrinted on Recycled 250g/m shiny paper and binded with a metal spiralcolored in Silver.\n\n100 % of the calendars' sales benefits will be for this edition given\nto “Le Syndicat du Strass” in France.\n",
       stripeURL: "https://buy.stripe.com/3cs3cm0jh1xa2S49AN",
     },
     {
