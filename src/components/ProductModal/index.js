@@ -18,7 +18,7 @@ const ProductModal = ({ product, setDisplayModal }) => {
 
       return () => clearInterval(intervalId);
     }
-  }, [product.name]);
+  }, [product.name, product.imageDetailURL]);
 
   return (
     <div className="modal-overlay" onClick={() => setDisplayModal(false)}>
