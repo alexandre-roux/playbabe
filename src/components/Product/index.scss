@@ -10,6 +10,27 @@
     object-fit: cover;
   }
 
+  .calendarp3-image {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../../public/images/eshop/calendarp3.jpg");
+    background-size: cover;
+    background-position: center;
+
+    img {
+      height: 175px;
+      opacity: 1;
+      transition: opacity 0.5s ease;
+
+      &:hover {
+        opacity: 0;
+      }
+    }
+  }
+
   .tee-shirts-image {
     height: 100%;
     background-image: url("../../../public/images/eshop/tee-shirt.jpg");

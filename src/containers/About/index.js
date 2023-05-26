@@ -49,7 +49,7 @@ const About = () => {
                   <div className="order-yours-container">
                     <img
                       src="/images/about/order-yours-black.png"
-                      alt="button"
+                      alt="order-yours"
                       className="order-yours"
                       onClick={() => navigate("/eshop")}
                     />

@@ -4,17 +4,17 @@ import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProductModal = ({ product, setDisplayModal }) => {
-  const [calendarImage, setCalendarImage] = useState("calendar1");
+  const [imageDetail, setImageDetail] = useState(product.imageDetailURL[0]);
 
   useEffect(() => {
-    if (product.name.includes("Calendar")) {
-      let i = 1;
+    if (product.imageDetailURL.length > 1) {
+      let i = 0;
 
       const intervalId = setInterval(() => {
         i++;
-        if (i > 3) i = 1;
-        setCalendarImage("calendar" + i);
-      }, 2000);
+        if (i >= product.imageDetailURL.length) i = 0;
+        setImageDetail(product.imageDetailURL[i]);
+      }, 1000);
 
       return () => clearInterval(intervalId);
     }
@@ -33,14 +33,7 @@ const ProductModal = ({ product, setDisplayModal }) => {
         />
         <div className="modal-content">
           <div className="images">
-            <img
-              src={
-                product.name.includes("Calendar")
-                  ? "/images/eshop/" + calendarImage + ".jpg"
-                  : product.imageDetailURL
-              }
-              alt="product"
-            />
+            <img src={imageDetail} alt="product" />
           </div>
           <div className="text-button">
             <div className="text">
@@ -51,29 +44,15 @@ const ProductModal = ({ product, setDisplayModal }) => {
               <p className="details">{product.details}</p>
             </div>
             <div className="button">
-              {product.name.includes("Calendar") ? (
-                <a href="https://buy.stripe.com/00g00aea7cbO78kcMO">
+              {product.stripeURL ? (
+                <a href={product.stripeURL}>
                   <img
                     src="/images/eshop/order-yours-white.png"
                     alt="order-yours"
                   />
                 </a>
-              ) : product.name.includes("Thong") ? (
-                <a href="https://buy.stripe.com/8wMaEO5DBcbO9gs7sy">
-                  <img
-                    src="/images/eshop/order-yours-white.png"
-                    alt="order-yours"
-                  />
-                </a>
-              ) : product.name.includes("Screenprinted") ? (
-                <img src="/images/eshop/sold-out-yellow.png" alt="sold-out" />
               ) : (
-                <a href="mailto:info@playbabe.org">
-                  <img
-                    src="/images/eshop/contact-us-white.png"
-                    alt="contact-us"
-                  />
-                </a>
+                <img src="/images/eshop/sold-out-yellow.png" alt="sold-out" />
               )}
             </div>
           </div>
