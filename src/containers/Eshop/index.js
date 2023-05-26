@@ -65,7 +65,14 @@ const Eshop = () => {
       imageURL: "/images/eshop/posters/lara.jpg",
       name: "XXL Poster (A0 format)",
       price: 125,
-      imageDetailURL: "/images/eshop/posters/lara.jpg",
+      imageDetailURL: [
+        "/images/eshop/posters/lara.jpg",
+        "/images/eshop/posters/chancel.jpg",
+        "/images/eshop/posters/lisa.jpg",
+        "/images/eshop/posters/nasi.jpg",
+        "/images/eshop/posters/misha.jpg",
+        "/images/eshop/posters/audrey.jpg",
+      ],
       title: "A0 Poster\nXXL Format",
       details:
         "Format: 84 x 120cm 6 vertical and 3 landscape. Photo paper, Silk Matt 180g/m, unreleased photographs. If you would like to purchase a print, please write us x",

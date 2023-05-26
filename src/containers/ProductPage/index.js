@@ -7,20 +7,22 @@ import "./index.scss";
 const ProductPage = () => {
   const location = useLocation();
   const product = location.state.product;
-  const [image, setImage] = useState("calendar1");
+  const [imageDetail, setImageDetail] = useState(product.imageDetailURL[0]);
   const navigate = useNavigate();
 
   useEffect(() => {
-    let i = 1;
+    if (product.imageDetailURL.length > 1) {
+      let i = 0;
 
-    const intervalId = setInterval(() => {
-      i++;
-      if (i > 3) i = 1;
-      setImage("calendar" + i);
-    }, 2000);
+      const intervalId = setInterval(() => {
+        i++;
+        if (i >= product.imageDetailURL.length) i = 0;
+        setImageDetail(product.imageDetailURL[i]);
+      }, 1000);
 
-    return () => clearInterval(intervalId);
-  }, []);
+      return () => clearInterval(intervalId);
+    }
+  }, [product.imageDetailURL]);
 
   return (
     <div className="product">
@@ -31,29 +33,15 @@ const ProductPage = () => {
       />
       <div className="product-container">
         <div className="product-content">
-          <img
-            src={
-              product.name.includes("Calendar")
-                ? "/images/eshop/" + image + ".jpg"
-                : product.imageDetailURL
-            }
-            alt="calendar"
-          />
+          <img src={imageDetail} alt="product" />
           <div className="title-price">
             <p className="title">{product.title}</p>
             <p className="price">{product.price + " €"}</p>
           </div>
           <div className="description-button">
             <p className="details">{product.details}</p>
-            {product.name.includes("Calendar") ? (
-              <a href="https://buy.stripe.com/00g00aea7cbO78kcMO">
-                <img
-                  src="/images/eshop/order-yours-white.png"
-                  alt="order-yours"
-                />
-              </a>
-            ) : product.name.includes("Thong") ? (
-              <a href="https://buy.stripe.com/8wMaEO5DBcbO9gs7sy">
+            {product.stripeURL ? (
+              <a href={product.stripeURL}>
                 <img
                   src="/images/eshop/order-yours-white.png"
                   alt="order-yours"
