@@ -21,7 +21,7 @@ const Eshop = () => {
         "/images/eshop/calendarp33.jpg",
         "/images/eshop/calendarp34.jpg",
         "/images/eshop/calendarp35.jpg",
-        "/images/eshop/calendarp3.jpg",
+        "/images/eshop/calendarp36.jpg",
       ],
       title: "PLAYBABE X P3\n - Pride Edition 2023",
       details:
