@@ -61,7 +61,21 @@ const Eshop = () => {
       details:
         "Screen-Printed Upcycled tee shirts with natural inks. Available in different colors and sizes. Please get in touch with us to know which one are still up for a grab :)",
     },
+    {
+      imageURL: "/images/eshop/posters/lara.jpg",
+      name: "XXL Poster (A0 format)",
+      price: 125,
+      imageDetailURL: "/images/eshop/posters/lara.jpg",
+      title: "A0 Poster\nXXL Format",
+      details:
+        "Format: 84 x 120cm 6 vertical and 3 landscape. Photo paper, Silk Matt 180g/m, unreleased photographs. If you would like to purchase a print, please write us x",
+    },
   ];
+
+  const products = [];
+  for (let i = 0; i < 4; i++) {
+    products.push(<Product classname={"product"} key={i} product={data[i]} />);
+  }
 
   return (
     <>
@@ -70,13 +84,7 @@ const Eshop = () => {
       ) : (
         <div className="eshop-desktop">
           <Header className={"header"} />
-          <div className="eshop-content">
-            {data.map((product, index) => {
-              return (
-                <Product classname="product" key={index} product={product} />
-              );
-            })}
-          </div>
+          <div className="eshop-content">{products}</div>
           <Footer className={"footer"} />
         </div>
       )}
