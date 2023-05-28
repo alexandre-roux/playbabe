@@ -62,7 +62,7 @@ const Eshop = () => {
         "Screen-Printed Upcycled tee shirts with natural inks. Available in different colors and sizes. Please get in touch with us to know which one are still up for a grab :)",
     },
     {
-      imageURL: "/images/eshop/posters/lara.jpg",
+      imageURL: "/images/eshop/posters/chancel.jpg",
       name: "XXL Poster (A0 format)",
       price: 125,
       imageDetailURL: [
@@ -76,6 +76,7 @@ const Eshop = () => {
       title: "A0 Poster\nXXL Format",
       details:
         "Format: 84 x 120cm 6 vertical and 3 landscape. Photo paper, Silk Matt 180g/m, unreleased photographs. If you would like to purchase a print, please write us x",
+      stripeURL: "https://buy.stripe.com/3cs14ed634JmeAM7sG",
     },
   ];
 
