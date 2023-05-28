@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 import "./index.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProductModal = ({ product, setDisplayModal }) => {
   const [imageDetail, setImageDetail] = useState(product.imageDetailURL[0]);
@@ -26,8 +25,9 @@ const ProductModal = ({ product, setDisplayModal }) => {
         className="modal-container"
         onClick={(event) => event.stopPropagation()}
       >
-        <FontAwesomeIcon
-          icon="xmark"
+        <img
+          src="/images/eshop/xmark-white.png"
+          alt="close"
           className="xmark"
           onClick={() => setDisplayModal(false)}
         />

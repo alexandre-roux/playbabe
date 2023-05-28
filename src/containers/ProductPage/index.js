@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "../../components/Footer";
 import "./index.scss";
 
@@ -26,8 +25,9 @@ const ProductPage = () => {
 
   return (
     <div className="product">
-      <FontAwesomeIcon
-        icon="xmark"
+      <img
+        src="/images/eshop/xmark-white.png"
+        alt="close"
         className="xmark"
         onClick={() => navigate("/eshop")}
       />
