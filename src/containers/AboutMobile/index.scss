@@ -29,7 +29,16 @@
 
       .calendar-img {
         height: 500px;
-        object-fit: cover;
+        background-image: url("../../../public/images/about/about-mobile.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          height: 175px;
+        }
       }
 
       .text {

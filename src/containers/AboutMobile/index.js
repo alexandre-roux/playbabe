@@ -14,11 +14,9 @@ const AboutMobile = () => {
             The PLAYBABE calendar is a non-profit project aiming at raising
             funds for feminist associations.
           </p>
-          <img
-            className="calendar-img"
-            src="/images/about/about-mobile.jpg"
-            alt="about-mobile"
-          />
+          <div className="calendar-img">
+            <img src="/images/eshop/new-release-yellow.png" alt="new-release" />
+          </div>
           <p style={{ fontSize: "1.3em" }}>
             By developing a form of hyper sexual visual language, we reclaim the
             traditional use of women's bodies in our culture and place it at the
