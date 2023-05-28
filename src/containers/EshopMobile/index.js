@@ -12,7 +12,7 @@ const EshopMobile = ({ data }) => {
         <div className="eshop-content">
           {data.map((product, index) => {
             return (
-              <Product classname="product" key={index} product={product} />
+              <Product className="product" key={index} product={product} />
             );
           })}
         </div>
