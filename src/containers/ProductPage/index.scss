@@ -17,12 +17,17 @@
     background-color: black;
 
     .product-content {
-      margin: 75px 15px 10px;
+      margin: 50px 15px 10px;
 
-      img {
-        height: 500px;
+      .image-detail {
         width: 100%;
-        object-fit: cover;
+        display: flex;
+        justify-content: center;
+
+        img {
+          height: 60vh;
+          object-fit: cover;
+        }
       }
 
       .title-price {
@@ -41,6 +46,7 @@
 
         .price {
           white-space: nowrap;
+          font-weight: bold;
         }
       }
 
