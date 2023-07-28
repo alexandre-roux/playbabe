@@ -39,9 +39,7 @@ const AboutMobile = () => {
             onClick={() =>
               navigate("/product", { state: { product: product } })
             }
-          >
-            <img src="/images/eshop/new-release-yellow.png" alt="new-release" />
-          </div>
+          />
           <p style={{ fontSize: "1.3em" }}>
             By developing a form of hyper sexual visual language, we reclaim the
             traditional use of women's bodies in our culture and place it at the

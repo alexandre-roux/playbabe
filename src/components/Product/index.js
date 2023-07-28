@@ -27,10 +27,6 @@ const Product = ({ product }) => {
               <img src="/images/eshop/sold-out-yellow.png" alt="sold-out" />
             </div>
           </div>
-        ) : product.name.includes("P3") ? (
-          <div className="calendarp3-image">
-            <img src="/images/eshop/new-release-yellow.png" alt="new-release" />
-          </div>
         ) : (
           <img className="product-image" src={product.imageURL} alt="product" />
         )}
