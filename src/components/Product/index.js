@@ -21,8 +21,14 @@ const Product = ({ product }) => {
   return (
     <>
       <div className="product" onClick={() => handleCLick()}>
-        {product.name.includes("shirts") ? (
+        {product.name.includes("Screenprinted Tee shirts - 1") ? (
           <div className="tee-shirts-image">
+            <div className="tee-shirts-image-overlay">
+              <img src="/images/eshop/sold-out-yellow.png" alt="sold-out" />
+            </div>
+          </div>
+        ) : product.name.includes("Thong") ? (
+          <div className="thongs-image">
             <div className="tee-shirts-image-overlay">
               <img src="/images/eshop/sold-out-yellow.png" alt="sold-out" />
             </div>

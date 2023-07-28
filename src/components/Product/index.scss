@@ -15,25 +15,32 @@
     background-image: url("../../../public/images/eshop/tee-shirt.jpg");
     background-size: cover;
     background-position: center;
+  }
 
-    .tee-shirts-image-overlay {
-      height: 100%;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  .thongs-image {
+    height: 100%;
+    background-image: url("../../../public/images/eshop/string.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .tee-shirts-image-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+
+    img {
+      height: 175px;
       opacity: 1;
-      transition: opacity 0.5s ease;
+    }
 
-      img {
-        height: 175px;
-        opacity: 1;
-      }
-
-      &:hover {
-        opacity: 0;
-      }
+    &:hover {
+      opacity: 0;
     }
   }
 

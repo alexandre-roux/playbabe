@@ -30,7 +30,7 @@ const Eshop = () => {
     },
     {
       imageURL: "/images/eshop/sex-with-you-sucks.jpg",
-      name: "Screenprinted Tee shirt - 2",
+      name: "Screenprinted Tee shirts - 2",
       price: 20,
       imageDetailURL: ["/images/eshop/sex-with-you-sucks1.jpg"],
       title: "UPCYCLED\nTEE SHIRT\n« SEX WITH YOU SUCKS! »",
@@ -74,7 +74,7 @@ const Eshop = () => {
     },
     {
       imageURL: "/images/eshop/tee-shirt.jpeg",
-      name: "Screenprinted Tee shirts",
+      name: "Screenprinted Tee shirts - 1",
       price: 25,
       imageDetailURL: ["/images/eshop/tee-shirt1.jpeg"],
       title: "UPCYCLED\nTEE SHIRT\n« FACE OF AN ANGEL\nBODY OF A PORNSTAR »",
