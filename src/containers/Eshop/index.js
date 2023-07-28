@@ -39,6 +39,16 @@ const Eshop = () => {
       stripeURL: "https://buy.stripe.com/9AQeV48PN8ZC1O03cs",
     },
     {
+      imageURL: "/images/eshop/poster-riso.jpg",
+      name: "Pride Cast - Risography print",
+      price: 15,
+      imageDetailURL: ["/images/eshop/poster-riso1.jpg"],
+      title: "Pride calendar cast, printed using risography technics",
+      details:
+        "Format: 29,7 x 42 cm (A3) Risograph poster of our amazing pride casting, printed with Neon Red ink on 110g/m matte paper at drucken3000, Berlin.",
+      stripeURL: "https://buy.stripe.com/5kA00a1nlejW8co8wO ",
+    },
+    {
       imageURL: "/images/eshop/calendar.jpg",
       name: "Calendar Edition 2023",
       price: 35,
@@ -91,7 +101,7 @@ const Eshop = () => {
   ];
 
   const products = [];
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < data.length; i++) {
     products.push(<Product classname={"product"} key={i} product={data[i]} />);
   }
 

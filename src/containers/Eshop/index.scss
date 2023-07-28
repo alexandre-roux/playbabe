@@ -16,15 +16,22 @@
 
   .eshop-content {
     width: 90%;
-    height: 100%;
+    margin: 100px 0;
     display: flex;
-    gap: 20px;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 
     .product {
       flex-basis: 23%;
+      margin-right: 20px;
+      padding-bottom: 20px;
+    }
+
+    .product:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    .product:nth-child(5n) {
+      padding-bottom: 100px;
     }
   }
 }
