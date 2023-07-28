@@ -29,6 +29,16 @@ const Eshop = () => {
       stripeURL: "https://buy.stripe.com/3cs3cm0jh1xa2S49AN",
     },
     {
+      imageURL: "/images/eshop/sex-with-you-sucks.jpg",
+      name: "Screenprinted Tee shirt - 2",
+      price: 20,
+      imageDetailURL: ["/images/eshop/sex-with-you-sucks1.jpg"],
+      title: "UPCYCLED\nTEE SHIRT\n« SEX WITH YOU SUCKS! »",
+      details:
+        "Screen-Printed Upcycled tee shirt with Red neon natural ink. Handpicked and bought in second hand shops. Available in different colors and sizes. Please get in touch with us to know which ones are still up for a grab :)",
+      stripeURL: "https://buy.stripe.com/9AQeV48PN8ZC1O03cs",
+    },
+    {
       imageURL: "/images/eshop/calendar.jpg",
       name: "Calendar Edition 2023",
       price: 35,
