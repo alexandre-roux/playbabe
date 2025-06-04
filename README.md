@@ -26,9 +26,7 @@ An online store developed with React, allowing you to showcase and sell products
 
 ## Running the project
 
-    ```bash
     yarn start
-    ```
 
 ## Project structure
 
