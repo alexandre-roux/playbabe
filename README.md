@@ -1,6 +1,7 @@
 # Playbabe Eshop
 
-An online store developed with React, allowing you to showcase and sell products via Stripe.
+Old online store of the PLAYBABE project developed with React, showcasing and selling products with Stripe.
+Find out more about the PLAYBABE project here: https://www.instagram.com/playbabe0/
 
 ## Features
 
