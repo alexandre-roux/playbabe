@@ -19,8 +19,7 @@
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
+    justify-content: center;
 
     color: white;
     text-decoration: none;
@@ -29,13 +28,6 @@
       font-family: "GT America Extended Black", sans-serif;
       font-size: 15.5vw;
     }
-
-    h2 {
-      text-decoration: underline;
-      font-size: 23px;
-      margin: 15px 0;
-    }
-
 
     &:hover {
       cursor: pointer;

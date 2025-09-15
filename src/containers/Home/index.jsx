@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-import {Link} from "react-router-dom";
 
 import "./index.scss";
 
@@ -46,16 +45,9 @@ const Home = () => {
                     }}
                 />
             ))}
-            <Link to="/about" className="text-container">
-                <h2
-                    onMouseOver={handleMouseOver}
-                    onMouseOut={handleMouseOut}
-                    style={{
-                        color: isHovering ? textColor : "white",
-                    }}
-                >
-                    ENTER WEBSITE
-                </h2>
+            <a rel='noopener noreferrer'
+               href="https://www.instagram.com/playbabe0/"
+               className="text-container">
                 <h1
                     className="logo"
                     onMouseOver={handleMouseOver}
@@ -66,16 +58,7 @@ const Home = () => {
                 >
                     PLAYBABE
                 </h1>
-                <h2
-                    onMouseOver={handleMouseOver}
-                    onMouseOut={handleMouseOut}
-                    style={{
-                        color: isHovering ? textColor : "white",
-                    }}
-                >
-                    ENTER WEBSITE
-                </h2>
-            </Link>
+            </a>
         </div>
     );
 };
