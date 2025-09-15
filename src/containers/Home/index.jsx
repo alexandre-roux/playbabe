@@ -1,16 +1,8 @@
 import React, {useEffect, useState} from "react";
-import {Link} from "react-router-dom";
 
 import "./index.scss";
 
 const Home = () => {
-    const images = [
-        "homepage1", "homepage2", "homepage3", "homepage4", "homepage5",
-        "homepage6", "homepage7", "homepage8", "homepage9", "homepage10",
-        "homepage11", "homepage12", "homepage13", "homepage14", "homepage15",
-        "homepage16", "homepage17", "homepage18", "homepage19"
-    ];
-
     const [background, setBackground] = useState("homepage1");
 
     useEffect(() => {
@@ -36,26 +28,21 @@ const Home = () => {
 
     return (
         <div className="home-container">
-            {images.map((img, index) => (
-                <img
-                    key={index}
-                    src={`/images/homepage/${img}.jpg`}
-                    alt="background"
-                    style={{
-                        display: background === "" || background === img ? "block" : "none",
-                    }}
-                />
-            ))}
-            <Link to="/about" className="text-container">
-                <h2
-                    onMouseOver={handleMouseOver}
-                    onMouseOut={handleMouseOut}
-                    style={{
-                        color: isHovering ? textColor : "white",
-                    }}
-                >
-                    ENTER WEBSITE
-                </h2>
+            <img
+                src={`/images/homepage/${background}.jpg`}
+                alt="background"
+                style={{
+                    height: "100%",
+                    width: "100%",
+                    objectFit: "cover",
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                }}
+            />
+            <a rel='noopener noreferrer'
+               href="https://www.instagram.com/playbabe0/"
+               className="text-container">
                 <h1
                     className="logo"
                     onMouseOver={handleMouseOver}
@@ -66,18 +53,10 @@ const Home = () => {
                 >
                     PLAYBABE
                 </h1>
-                <h2
-                    onMouseOver={handleMouseOver}
-                    onMouseOut={handleMouseOut}
-                    style={{
-                        color: isHovering ? textColor : "white",
-                    }}
-                >
-                    ENTER WEBSITE
-                </h2>
-            </Link>
+            </a>
         </div>
-    );
+    )
+        ;
 };
 
 export default Home;
