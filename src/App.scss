@@ -11,8 +11,8 @@ html, body, #root {
 
 @font-face {
     font-family: 'GT America Extended Black';
-    src: url('../public/fonts/GT-America-Extended-Black.woff2') format('woff2'),
-    url('../public/fonts/GT-America-Extended-Black.woff') format('woff');
+    src: url('/fonts/GT-America-Extended-Black.woff2') format('woff2'),
+    url('/fonts/GT-America-Extended-Black.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -20,8 +20,8 @@ html, body, #root {
 
 @font-face {
     font-family: 'Helvetica';
-    src: url('../public/fonts/Helvetica.woff2') format('woff2'),
-    url('../public/fonts/Helvetica.woff') format('woff');
+    src: url('/fonts/Helvetica.woff2') format('woff2'),
+    url('/fonts/Helvetica.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -29,8 +29,8 @@ html, body, #root {
 
 @font-face {
     font-family: 'Helvetica';
-    src: url('../public/fonts/Helvetica-Bold.woff2') format('woff2'),
-    url('../public/fonts/Helvetica-Bold.woff') format('woff');
+    src: url('/fonts/Helvetica-Bold.woff2') format('woff2'),
+    url('/fonts/Helvetica-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -38,8 +38,8 @@ html, body, #root {
 
 @font-face {
     font-family: 'Helvetica';
-    src: url('../public/fonts/Helvetica-BoldOblique.woff2') format('woff2'),
-    url('../public/fonts/Helvetica-BoldOblique.woff') format('woff');
+    src: url('/fonts/Helvetica-BoldOblique.woff2') format('woff2'),
+    url('/fonts/Helvetica-BoldOblique.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;

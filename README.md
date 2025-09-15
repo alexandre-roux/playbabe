@@ -27,7 +27,9 @@ Find out more about the PLAYBABE project here: https://www.instagram.com/playbab
 
 ## Running the project
 
-    yarn start
+- Development server: `yarn dev`
+- Production build: `yarn build`
+- Preview production build locally: `yarn preview`
 
 ## Project structure
 
